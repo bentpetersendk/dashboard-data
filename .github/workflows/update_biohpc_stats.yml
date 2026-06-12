@@ -82,6 +82,7 @@ jobs:
             *) BIOHPC_STATS_OUTPUT_PATH="$GITHUB_WORKSPACE/dashboard-data/$BIOHPC_STATS_OUTPUT_PATH" ;;
           esac
           export BIOHPC_STATS_OUTPUT_PATH
+          export STATS_OUTPUT_PATH="$BIOHPC_STATS_OUTPUT_PATH"
           mkdir -p "$(dirname "$BIOHPC_STATS_OUTPUT_PATH")"
           python scripts/update_stats.py
 
