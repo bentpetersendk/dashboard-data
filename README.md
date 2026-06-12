@@ -85,4 +85,6 @@ Optional variables:
 - `AIRTABLE_ACTIVE_PROJECTS_FORMULA`
 - `AIRTABLE_ORDERED_PROJECTS_FORMULA`
 
+The workflow installs Python dependencies from the BioHPC website repository `requirements.txt` before running `scripts/update_stats.py`. If that file is missing or empty, the workflow fails with a clear configuration error instead of continuing to a later import failure.
+
 The workflow maps optional Airtable filters from repository variables into the script environment. Leave optional variables unset to use the BioHPC website script defaults.

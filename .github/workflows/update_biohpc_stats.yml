@@ -56,14 +56,26 @@ jobs:
         working-directory: BioHPC_Website
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            python -m pip install -r requirements.txt
+          if [ ! -s requirements.txt ]; then
+            echo "::error file=BioHPC_Website/requirements.txt::requirements.txt is missing or empty in $BIOHPC_STATS_SOURCE_REPOSITORY. Add the Python dependencies required by scripts/update_stats.py."
+            exit 1
           fi
+          python -m pip install -r requirements.txt
+
+      - name: Validate BioHPC stats script dependencies
+        working-directory: BioHPC_Website
+        run: |
+          python -m py_compile scripts/update_stats.py
+          python -c "import runpy; runpy.run_path('scripts/update_stats.py', run_name='biohpc_stats_dependency_check')"
 
       - name: Generate BioHPC stats
         working-directory: BioHPC_Website
         run: |
-          export BIOHPC_STATS_OUTPUT_PATH="$GITHUB_WORKSPACE/dashboard-data/$BIOHPC_STATS_OUTPUT_PATH"
+          case "$BIOHPC_STATS_OUTPUT_PATH" in
+            /*) ;;
+            *) BIOHPC_STATS_OUTPUT_PATH="$GITHUB_WORKSPACE/dashboard-data/$BIOHPC_STATS_OUTPUT_PATH" ;;
+          esac
+          export BIOHPC_STATS_OUTPUT_PATH
           mkdir -p "$(dirname "$BIOHPC_STATS_OUTPUT_PATH")"
           python scripts/update_stats.py
 
