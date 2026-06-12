@@ -32,6 +32,12 @@ jobs:
       AIRTABLE_ORDERED_PROJECTS_FORMULA: ${{ vars.AIRTABLE_ORDERED_PROJECTS_FORMULA }}
 
     steps:
+      - name: Log workflow context
+        run: |
+          echo "Current UTC time: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          echo "Current branch: $GITHUB_REF_NAME"
+          echo "Trigger type: $GITHUB_EVENT_NAME"
+
       - name: Checkout dashboard data
         uses: actions/checkout@v4
         with:
