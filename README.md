@@ -34,7 +34,7 @@ The BioHPC website currently reads:
 https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/biohpc/stats.json
 ```
 
-The scheduled GitHub Actions workflow in `.github/workflows/update_biohpc_stats.yml` runs hourly, can be triggered manually, generates this file from Airtable using `bentpetersendk/BioHPC_Website/scripts/update_stats.py`, and commits it only when the generated JSON changes.
+The scheduled GitHub Actions workflow in `.github/workflows/update_biohpc_stats.yml` runs hourly, can be triggered manually, generates this file from Airtable using `bentpetersendk/biohpc.github.io/scripts/update_stats.py`, and commits it only when the generated JSON changes.
 
 ## Adding Mjolnir Metrics
 
@@ -64,7 +64,7 @@ The BioHPC Airtable workflow supports these variables:
 
 - `DASHBOARD_DATA_BRANCH` - target branch, default `main`.
 - `BIOHPC_STATS_OUTPUT_PATH` - output path, default `biohpc/stats.json`.
-- `BIOHPC_STATS_SOURCE_REPOSITORY` - repository containing `scripts/update_stats.py`, default `bentpetersendk/BioHPC_Website`.
+- `BIOHPC_STATS_SOURCE_REPOSITORY` - repository containing `scripts/update_stats.py`, default `bentpetersendk/biohpc.github.io`.
 
 Required secrets:
 
@@ -73,7 +73,7 @@ Required secrets:
 
 Optional secrets:
 
-- `BIOHPC_WEBSITE_TOKEN` - token used to checkout `bentpetersendk/BioHPC_Website` if that repository is private. If unset, the workflow falls back to `GITHUB_TOKEN`.
+- `BIOHPC_WEBSITE_TOKEN` - token used to checkout `bentpetersendk/biohpc.github.io` if that repository is private. If unset, the workflow falls back to `GITHUB_TOKEN`.
 
 Optional variables:
 

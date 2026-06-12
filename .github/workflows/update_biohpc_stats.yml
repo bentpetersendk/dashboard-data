@@ -20,7 +20,7 @@ jobs:
     env:
       DASHBOARD_DATA_BRANCH: ${{ vars.DASHBOARD_DATA_BRANCH || 'main' }}
       BIOHPC_STATS_OUTPUT_PATH: ${{ vars.BIOHPC_STATS_OUTPUT_PATH || 'biohpc/stats.json' }}
-      BIOHPC_STATS_SOURCE_REPOSITORY: ${{ vars.BIOHPC_STATS_SOURCE_REPOSITORY || 'bentpetersendk/BioHPC_Website' }}
+      BIOHPC_STATS_SOURCE_REPOSITORY: ${{ vars.BIOHPC_STATS_SOURCE_REPOSITORY || 'bentpetersendk/biohpc.github.io' }}
       AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
       AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
       AIRTABLE_VIEW: ${{ vars.AIRTABLE_VIEW }}
