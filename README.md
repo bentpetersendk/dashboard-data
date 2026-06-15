@@ -96,7 +96,8 @@ The published BioHPC `users` metrics distinguish historical adoption from curren
 The published BioHPC `pis` metrics show Principal Investigator onboarding progress:
 
 - `pis.registered` / "Registered Principal Investigators" counts all records in the `PIs` table.
-- `pis.approved` / "Approved Principal Investigators" counts PIs whose `PI Registration Status` is `approved`.
+- `pis.approved` / "Approved Principal Investigators" counts PIs whose `PI Registration Status` is `Approved`.
+- `pis.pending_requests` counts PIs whose `PI Registration Status` is `Pending Verification`.
 
 The workflow installs Python dependencies from the BioHPC website repository `requirements.txt` before running `scripts/update_stats.py`. If that file is missing or empty, the workflow fails with a clear configuration error instead of continuing to a later import failure.
 
