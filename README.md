@@ -78,12 +78,20 @@ Optional secrets:
 Optional variables:
 
 - `AIRTABLE_VIEW`
+- `AIRTABLE_TOTAL_USERS_REGISTERED_FORMULA`
+- `AIRTABLE_ACTIVE_USERS_FORMULA`
 - `AIRTABLE_APPROVED_USERS_FORMULA`
 - `AIRTABLE_PENDING_USER_REQUESTS_FORMULA`
 - `AIRTABLE_APPROVED_PIS_FORMULA`
 - `AIRTABLE_PENDING_PI_REQUESTS_FORMULA`
 - `AIRTABLE_ACTIVE_PROJECTS_FORMULA`
 - `AIRTABLE_ORDERED_PROJECTS_FORMULA`
+
+The published BioHPC `users` metrics distinguish historical adoption from current access:
+
+- `users.registered` / "Total Users Registered" counts users whose `Account Status` indicates they have been approved and onboarded. The default formula counts `active`, `inactive`, `disabled`, `suspended`, `deactivated`, and `closed`.
+- `users.active` / "Active Users" counts users whose `Account Status` is `active`.
+- `users.approved` is retained for existing consumers and defaults to the active-access definition.
 
 The workflow installs Python dependencies from the BioHPC website repository `requirements.txt` before running `scripts/update_stats.py`. If that file is missing or empty, the workflow fails with a clear configuration error instead of continuing to a later import failure.
 
