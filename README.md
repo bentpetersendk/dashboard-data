@@ -93,6 +93,11 @@ The published BioHPC `users` metrics distinguish historical adoption from curren
 - `users.active` / "Active Users" counts users whose `Account Status` is `active`.
 - `users.approved` is retained for existing consumers and defaults to the active-access definition.
 
+The published BioHPC `pis` metrics show Principal Investigator onboarding progress:
+
+- `pis.registered` / "Registered Principal Investigators" counts all records in the `PIs` table.
+- `pis.approved` / "Approved Principal Investigators" counts PIs whose `PI Registration Status` is `approved`.
+
 The workflow installs Python dependencies from the BioHPC website repository `requirements.txt` before running `scripts/update_stats.py`. If that file is missing or empty, the workflow fails with a clear configuration error instead of continuing to a later import failure.
 
 The workflow maps optional Airtable filters from repository variables into the script environment. Leave optional variables unset to use the BioHPC website script defaults.
