@@ -99,6 +99,8 @@ The published BioHPC `pis` metrics show Principal Investigator onboarding progre
 - `pis.approved` / "Approved Principal Investigators" counts PIs whose `PI Registration Status` is `Approved`.
 - `pis.pending_requests` counts PIs whose `PI Registration Status` is `Pending Verification`.
 
+When no PI formula override is configured, the BioHPC stats generator uses those status values as a safe fallback if Airtable formula filtering returns zero records.
+
 The workflow installs Python dependencies from the BioHPC website repository `requirements.txt` before running `scripts/update_stats.py`. If that file is missing or empty, the workflow fails with a clear configuration error instead of continuing to a later import failure.
 
 The workflow maps optional Airtable filters from repository variables into the script environment. Leave optional variables unset to use the BioHPC website script defaults.
