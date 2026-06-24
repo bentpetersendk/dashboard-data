@@ -15,10 +15,13 @@ dashboard-data/
 │   └── storage.json
 │
 ├── mjolnir/
-│   ├── stats.json
-│   ├── queue.json
-│   ├── utilization.json
-│   └── node_status.json
+│   ├── node_insights.json    (latest snapshot + pending reasons + node states)
+│   ├── capacity_history.json (cluster-level time series)
+│   ├── node_history.json     (per-node time series)
+│   ├── queue_insights.json   (future)
+│   ├── slurm_insights.json   (future)
+│   ├── platform_status.json  (future)
+│   └── predictions.json      (future)
 │
 └── webservices/
     └── stats.json
@@ -36,14 +39,29 @@ https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/biohpc/stat
 
 The scheduled GitHub Actions workflow in `.github/workflows/update_biohpc_stats.yml` runs hourly, can be triggered manually, generates this file from Airtable using `bentpetersendk/biohpc.github.io/scripts/update_stats.py`, and commits it only when the generated JSON changes.
 
-## Adding Mjolnir Metrics
+## Mjolnir Metrics
 
-Add Mjolnir data under `mjolnir/` without changing existing BioHPC paths:
+The Mjolnir Analytics dashboard (`bentpetersendk/mjolnir-efficiency-dashboard-public`) reads:
 
-- `mjolnir/stats.json` for high-level summary metrics.
-- `mjolnir/queue.json` for queue depth, wait time, and scheduler state.
-- `mjolnir/utilization.json` for CPU, memory, GPU, and allocation utilization.
-- `mjolnir/node_status.json` for node availability and health.
+```text
+https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/mjolnir/node_insights.json
+https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/mjolnir/capacity_history.json
+https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/mjolnir/node_history.json
+```
+
+These are generated hourly on the Mjolnir headnode from a local SQLite
+database by `scripts/export_node_insights.py` in that repo, and published
+by `scripts/publish_dashboard.sh` (run via `mjolnir-node-collector.timer`),
+which clones/syncs this repo, exports into `mjolnir/`, and commits only
+when the generated JSON changes - the same pattern as the BioHPC Airtable
+workflow above, just driven by a systemd timer on the headnode instead of
+GitHub Actions, since the data source (Slurm CLI) is only reachable from
+there. See `docs/DASHBOARD_DATA_MIGRATION.md` in that repo for the full
+rationale.
+
+Future Mjolnir modules add their own file under `mjolnir/` without
+changing these paths: `queue_insights.json`, `slurm_insights.json`,
+`platform_status.json`, `predictions.json`.
 
 Use one workflow per source system when that keeps secrets, schedules, and failure modes independent. Keep JSON schemas stable once a public dashboard consumes them.
 
