@@ -1,42 +1,46 @@
 {
   "schema_version": "node-insights-v1",
-  "generated_at": "2026-06-24T22:00:35Z",
+  "generated_at": "2026-06-24T23:00:36Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
   "platform_module": "Node Insights",
   "data_window_days": null,
   "latest_snapshot": {
-    "timestamp": "2026-06-24T22:00:33Z",
+    "timestamp": "2026-06-24T23:00:33Z",
     "total_nodes": 20,
     "available_nodes": 13,
     "draining_nodes": 7,
     "down_nodes": 0,
     "cpu_total": 2720,
-    "cpu_allocated": 1206,
+    "cpu_allocated": 1450,
     "memory_total_gib": 22853.41,
-    "memory_allocated_gib": 7677.09,
+    "memory_allocated_gib": 11249.58,
     "gpu_total": 10,
     "gpu_allocated": 0,
-    "running_jobs": 175,
-    "pending_jobs": 538
+    "running_jobs": 197,
+    "pending_jobs": 542
   },
   "pending_reasons": [
     {
       "reason": "Priority",
-      "count": 530
+      "count": 533
     },
     {
       "reason": "JobArrayTaskLimit",
-      "count": 4
-    },
-    {
-      "reason": "Resources",
-      "count": 2
+      "count": 5
     },
     {
       "reason": "Dependency",
       "count": 2
+    },
+    {
+      "reason": "Resources",
+      "count": 1
+    },
+    {
+      "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
+      "count": 1
     }
   ],
   "nodes": [
@@ -44,14 +48,14 @@
       "node_name": "mjolnircomp01fl",
       "node_state": "ALLOCATED",
       "cpu_pct": 1.0,
-      "memory_pct": 0.2672,
+      "memory_pct": 0.5889,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp02fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9375,
-      "memory_pct": 0.5142,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.7087,
       "gpu_pct": null
     },
     {
@@ -63,23 +67,23 @@
     },
     {
       "node_name": "mjolnircomp04fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9375,
-      "memory_pct": 0.2638,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.4155,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp05fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.9844,
-      "memory_pct": 0.9966,
+      "cpu_pct": 0.9688,
+      "memory_pct": 0.9252,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp06fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.7812,
-      "memory_pct": 0.9369,
+      "cpu_pct": 0.6094,
+      "memory_pct": 0.9114,
       "gpu_pct": null
     },
     {
@@ -99,29 +103,29 @@
     {
       "node_name": "mjolnircomp09fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.9583,
-      "memory_pct": 0.9361,
+      "cpu_pct": 0.8958,
+      "memory_pct": 0.9489,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp10fl",
       "node_state": "MIXED",
       "cpu_pct": 0.9792,
-      "memory_pct": 0.7648,
+      "memory_pct": 0.7801,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp11fl",
       "node_state": "MIXED",
       "cpu_pct": 0.9792,
-      "memory_pct": 0.7771,
+      "memory_pct": 0.8843,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp12fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9375,
-      "memory_pct": 0.3805,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.5894,
       "gpu_pct": null
     },
     {
@@ -142,7 +146,7 @@
       "node_name": "mjolnircomp15fl",
       "node_state": "MIXED",
       "cpu_pct": 0.9792,
-      "memory_pct": 0.2375,
+      "memory_pct": 0.2863,
       "gpu_pct": null
     },
     {
@@ -162,15 +166,15 @@
     {
       "node_name": "mjolnirgpu01fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.125,
-      "memory_pct": 0.0943,
+      "cpu_pct": 0.8438,
+      "memory_pct": 1.0,
       "gpu_pct": 0.0
     },
     {
       "node_name": "mjolnirgpu02fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.125,
-      "memory_pct": 0.158,
+      "cpu_pct": 0.7656,
+      "memory_pct": 0.9967,
       "gpu_pct": 0.0
     },
     {
