@@ -1,57 +1,61 @@
 {
   "schema_version": "node-insights-v1",
-  "generated_at": "2026-06-25T13:00:19Z",
+  "generated_at": "2026-06-25T14:00:19Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
   "platform_module": "Node Insights",
   "data_window_days": null,
   "latest_snapshot": {
-    "timestamp": "2026-06-25T13:00:12Z",
+    "timestamp": "2026-06-25T14:00:12Z",
     "total_nodes": 20,
     "available_nodes": 17,
     "draining_nodes": 3,
     "down_nodes": 0,
     "cpu_total": 2720,
-    "cpu_allocated": 1570,
+    "cpu_allocated": 1620,
     "memory_total_gib": 22853.41,
-    "memory_allocated_gib": 12260.09,
+    "memory_allocated_gib": 16046.48,
     "gpu_total": 10,
     "gpu_allocated": 0,
-    "running_jobs": 223,
-    "pending_jobs": 428
+    "running_jobs": 240,
+    "pending_jobs": 509
   },
   "pending_reasons": [
     {
       "reason": "Priority",
-      "count": 419
+      "count": 499
     },
     {
       "reason": "JobArrayTaskLimit",
       "count": 5
     },
     {
-      "reason": "Resources",
-      "count": 2
+      "reason": "Dependency",
+      "count": 3
     },
     {
-      "reason": "Dependency",
-      "count": 2
+      "reason": "Resources",
+      "count": 1
+    },
+    {
+      "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
+      "count": 1
     }
   ],
   "nodes": [
     {
       "node_name": "mjolnircomp01fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9375,
-      "memory_pct": 0.4394,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.6314,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp02fl",
       "node_state": "ALLOCATED",
       "cpu_pct": 1.0,
-      "memory_pct": 0.9997,
+      "memory_pct": 0.9595,
       "gpu_pct": null
     },
     {
@@ -63,16 +67,16 @@
     },
     {
       "node_name": "mjolnircomp04fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.7834,
+      "node_state": "MIXED",
+      "cpu_pct": 0.9792,
+      "memory_pct": 0.9991,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp05fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.9531,
-      "memory_pct": 0.9789,
+      "cpu_pct": 0.8125,
+      "memory_pct": 0.9501,
       "gpu_pct": null
     },
     {
@@ -86,7 +90,7 @@
       "node_name": "mjolnircomp07fl",
       "node_state": "ALLOCATED",
       "cpu_pct": 1.0,
-      "memory_pct": 0.9892,
+      "memory_pct": 0.8938,
       "gpu_pct": null
     },
     {
@@ -98,37 +102,37 @@
     },
     {
       "node_name": "mjolnircomp09fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9375,
-      "memory_pct": 0.7328,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.8826,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp10fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.9583,
-      "memory_pct": 0.3082,
+      "cpu_pct": 0.9792,
+      "memory_pct": 0.7078,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp11fl",
       "node_state": "ALLOCATED",
       "cpu_pct": 1.0,
-      "memory_pct": 0.3509,
+      "memory_pct": 0.8488,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp12fl",
       "node_state": "ALLOCATED",
       "cpu_pct": 1.0,
-      "memory_pct": 0.827,
+      "memory_pct": 0.9502,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp13fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9167,
-      "memory_pct": 0.649,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.6802,
       "gpu_pct": null
     },
     {
@@ -142,14 +146,14 @@
       "node_name": "mjolnircomp15fl",
       "node_state": "MIXED",
       "cpu_pct": 0.9792,
-      "memory_pct": 0.5653,
+      "memory_pct": 0.7965,
       "gpu_pct": null
     },
     {
       "node_name": "mjolnircomp16fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.875,
-      "memory_pct": 0.832,
+      "node_state": "ALLOCATED",
+      "cpu_pct": 1.0,
+      "memory_pct": 0.978,
       "gpu_pct": null
     },
     {
@@ -162,15 +166,15 @@
     {
       "node_name": "mjolnirgpu01fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.2188,
-      "memory_pct": 0.2108,
+      "cpu_pct": 0.4531,
+      "memory_pct": 0.8108,
       "gpu_pct": 0.0
     },
     {
       "node_name": "mjolnirgpu02fl",
       "node_state": "MIXED",
-      "cpu_pct": 0.2188,
-      "memory_pct": 0.2808,
+      "cpu_pct": 0.2422,
+      "memory_pct": 0.8944,
       "gpu_pct": 0.0
     },
     {
