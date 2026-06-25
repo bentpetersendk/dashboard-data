@@ -41,7 +41,7 @@ The scheduled GitHub Actions workflow in `.github/workflows/update_biohpc_stats.
 
 ## Mjolnir Metrics
 
-The Mjolnir Analytics dashboard (`bentpetersendk/mjolnir-efficiency-dashboard-public`) reads:
+The Mjolnir Analytics dashboard (`bentpetersendk/mjolnir-analytics-public`) reads:
 
 ```text
 https://raw.githubusercontent.com/bentpetersendk/dashboard-data/main/mjolnir/node_insights.json
