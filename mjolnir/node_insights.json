@@ -1,192 +1,1141 @@
 {
   "schema_version": "node-insights-v1",
-  "generated_at": "2026-06-27T22:00:36Z",
+  "generated_at": "2026-06-27T23:08:19Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
   "platform_module": "Node Insights",
   "data_window_days": null,
-  "latest_snapshot": {
-    "timestamp": "2026-06-27T22:00:34Z",
-    "total_nodes": 20,
-    "available_nodes": 17,
-    "draining_nodes": 3,
-    "down_nodes": 0,
-    "cpu_total": 2720,
-    "cpu_allocated": 1780,
-    "memory_total_gib": 22853.41,
-    "memory_allocated_gib": 10575.98,
-    "gpu_total": 10,
-    "gpu_allocated": 0,
-    "running_jobs": 222,
-    "pending_jobs": 340
+  "files": {
+    "cluster_overview": "cluster_overview",
+    "node_inventory": "node_inventory",
+    "hardware_inventory": "hardware_inventory",
+    "capacity_planning": "capacity_planning"
   },
-  "pending_reasons": [
-    {
-      "reason": "Priority",
-      "count": 330
+  "cluster_overview": {
+    "totals": {
+      "nodes_total": 20,
+      "nodes_available": 17,
+      "nodes_draining": 3,
+      "nodes_down": 0
     },
-    {
-      "reason": "JobArrayTaskLimit",
-      "count": 4
+    "cpu": {
+      "alloc": 1768,
+      "total": 2720,
+      "alloc_pct": 0.65
     },
-    {
-      "reason": "Resources",
-      "count": 2
+    "memory_mib": {
+      "alloc": 10135665,
+      "total": 23401892,
+      "alloc_pct": 0.4331
     },
-    {
-      "reason": "Dependency",
-      "count": 2
+    "gpu": {
+      "alloc": 6,
+      "total": 10,
+      "alloc_pct": 0.6,
+      "online_total": 6,
+      "alloc_pct_of_online": 1.0
     },
-    {
-      "reason": "QOSMaxCpuPerJobLimit",
-      "count": 1
+    "queue": {
+      "jobs_total": 570,
+      "running": 203,
+      "pending": 367,
+      "by_partition": [
+        {
+          "partition": "cpuqueue",
+          "running": 197,
+          "pending": 260
+        },
+        {
+          "partition": "gpuqueue",
+          "running": 6,
+          "pending": 107
+        }
+      ],
+      "pending_reasons": [
+        {
+          "reason": "Priority",
+          "count": 358
+        },
+        {
+          "reason": "JobArrayTaskLimit",
+          "count": 4
+        },
+        {
+          "reason": "Resources",
+          "count": 2
+        },
+        {
+          "reason": "Dependency",
+          "count": 2
+        },
+        {
+          "reason": "DependencyNeverSatisfied",
+          "count": 1
+        }
+      ]
     },
-    {
-      "reason": "DependencyNeverSatisfied",
-      "count": 1
+    "maintenance": {
+      "nodes_draining": 3,
+      "nodes": [
+        {
+          "node": "mjolnircomp03fl",
+          "reason": "maintenance",
+          "since": "2026-06-23T11:11:35"
+        },
+        {
+          "node": "mjolnircomp17fl",
+          "reason": "maintenance",
+          "since": "2026-06-23T09:28:36"
+        },
+        {
+          "node": "mjolnirgpu03fl",
+          "reason": "maintenance",
+          "since": "2026-06-17T10:31:35"
+        }
+      ]
+    },
+    "by_class": [
+      {
+        "class": "GPU",
+        "count": 3
+      },
+      {
+        "class": "High Memory",
+        "count": 2
+      },
+      {
+        "class": "Other",
+        "count": 4
+      },
+      {
+        "class": "Standard Compute",
+        "count": 11
+      }
+    ],
+    "by_partition": [
+      {
+        "partition": "cpuqueue",
+        "node_count": 20
+      },
+      {
+        "partition": "filetransfer",
+        "node_count": 14
+      },
+      {
+        "partition": "gpuqueue",
+        "node_count": 3
+      },
+      {
+        "partition": "lazyqueue",
+        "node_count": 20
+      },
+      {
+        "partition": "teaching",
+        "node_count": 1
+      }
+    ]
+  },
+  "node_inventory": {
+    "node_count": 20,
+    "nodes": [
+      {
+        "node": "mjolnircomp01fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 49.44,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 409024,
+        "free_mem_mib": 617986,
+        "mem_alloc_pct": 0.3994,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T09:52:51",
+        "slurmd_start_time": "2026-06-18T09:53:11",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 13
+      },
+      {
+        "node": "mjolnircomp02fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 90.06,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 720896,
+        "free_mem_mib": 5592,
+        "mem_alloc_pct": 0.704,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-12T15:35:17",
+        "slurmd_start_time": "2026-06-12T15:35:37",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 11
+      },
+      {
+        "node": "mjolnircomp03fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 0,
+        "cpu_alloc_pct": 0.0,
+        "cpu_load": 0.02,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 0,
+        "free_mem_mib": 1026142,
+        "mem_alloc_pct": 0.0,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "IDLE+DRAIN",
+        "state_base": "IDLE",
+        "drain": true,
+        "down": false,
+        "drain_reason": "maintenance",
+        "drain_since": "2026-06-23T11:11:35",
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-22T15:00:37",
+        "slurmd_start_time": "2026-06-22T15:00:57",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 0
+      },
+      {
+        "node": "mjolnircomp04fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 52.27,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 368064,
+        "free_mem_mib": 644979,
+        "mem_alloc_pct": 0.3594,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T09:52:45",
+        "slurmd_start_time": "2026-06-18T09:53:05",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 11
+      },
+      {
+        "node": "mjolnircomp05fl",
+        "class": "other",
+        "class_label": "Other",
+        "arch": "x86_64",
+        "cpu_total": 128,
+        "cpu_alloc": 110,
+        "cpu_alloc_pct": 0.8594,
+        "cpu_load": 92.43,
+        "sockets": 2,
+        "cores_per_socket": 32,
+        "threads_per_core": 2,
+        "physical_cores": 64,
+        "real_memory_mib": 512000,
+        "alloc_mem_mib": 429792,
+        "free_mem_mib": 114631,
+        "mem_alloc_pct": 0.8394,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "MIXED",
+        "state_base": "MIXED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-15T12:23:56",
+        "slurmd_start_time": "2026-06-15T12:24:20",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 21
+      },
+      {
+        "node": "mjolnircomp06fl",
+        "class": "other",
+        "class_label": "Other",
+        "arch": "x86_64",
+        "cpu_total": 128,
+        "cpu_alloc": 112,
+        "cpu_alloc_pct": 0.875,
+        "cpu_load": 72.72,
+        "sockets": 2,
+        "cores_per_socket": 32,
+        "threads_per_core": 2,
+        "physical_cores": 64,
+        "real_memory_mib": 453087,
+        "alloc_mem_mib": 335584,
+        "free_mem_mib": 225671,
+        "mem_alloc_pct": 0.7407,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "MIXED",
+        "state_base": "MIXED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-15T12:24:18",
+        "slurmd_start_time": "2026-06-15T12:24:41",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 12
+      },
+      {
+        "node": "mjolnircomp07fl",
+        "class": "other",
+        "class_label": "Other",
+        "arch": "x86_64",
+        "cpu_total": 64,
+        "cpu_alloc": 64,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 63.09,
+        "sockets": 2,
+        "cores_per_socket": 16,
+        "threads_per_core": 2,
+        "physical_cores": 32,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 888832,
+        "free_mem_mib": 601201,
+        "mem_alloc_pct": 0.868,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-25T09:03:50",
+        "slurmd_start_time": "2026-06-25T09:15:47",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 13
+      },
+      {
+        "node": "mjolnircomp08fl",
+        "class": "high_memory",
+        "class_label": "High Memory",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 61.18,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 2048000,
+        "alloc_mem_mib": 255856,
+        "free_mem_mib": 1736604,
+        "mem_alloc_pct": 0.1249,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-22T15:04:14",
+        "slurmd_start_time": "2026-06-23T09:29:03",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 12
+      },
+      {
+        "node": "mjolnircomp09fl",
+        "class": "high_memory",
+        "class_label": "High Memory",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 84,
+        "cpu_alloc_pct": 0.875,
+        "cpu_load": 57.83,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 2048000,
+        "alloc_mem_mib": 304720,
+        "free_mem_mib": 1139476,
+        "mem_alloc_pct": 0.1488,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "MIXED",
+        "state_base": "MIXED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T09:53:19",
+        "slurmd_start_time": "2026-06-18T10:31:43",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 15
+      },
+      {
+        "node": "mjolnircomp10fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 63.4,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 423648,
+        "free_mem_mib": 199812,
+        "mem_alloc_pct": 0.4137,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-15T12:24:32",
+        "slurmd_start_time": "2026-06-15T12:24:55",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 11
+      },
+      {
+        "node": "mjolnircomp11fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 60.83,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 524144,
+        "free_mem_mib": 78662,
+        "mem_alloc_pct": 0.5119,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-12T15:33:53",
+        "slurmd_start_time": "2026-06-12T15:34:14",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 11
+      },
+      {
+        "node": "mjolnircomp12fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 98.54,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 466944,
+        "free_mem_mib": 81240,
+        "mem_alloc_pct": 0.456,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-22T15:03:41",
+        "slurmd_start_time": "2026-06-22T15:04:05",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 8
+      },
+      {
+        "node": "mjolnircomp13fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 96.71,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 583680,
+        "free_mem_mib": 746559,
+        "mem_alloc_pct": 0.57,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-25T09:03:53",
+        "slurmd_start_time": "2026-06-25T09:04:11",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 8
+      },
+      {
+        "node": "mjolnircomp14fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 91.72,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 573440,
+        "free_mem_mib": 78907,
+        "mem_alloc_pct": 0.56,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "filetransfer",
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-25T09:04:17",
+        "slurmd_start_time": "2026-06-25T09:04:35",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 6
+      },
+      {
+        "node": "mjolnircomp15fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 44.32,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 406832,
+        "free_mem_mib": 469454,
+        "mem_alloc_pct": 0.3973,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T09:52:52",
+        "slurmd_start_time": "2026-06-18T09:53:10",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 14
+      },
+      {
+        "node": "mjolnircomp16fl",
+        "class": "standard_compute",
+        "class_label": "Standard Compute",
+        "arch": "x86_64",
+        "cpu_total": 96,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 117.29,
+        "sockets": 2,
+        "cores_per_socket": 24,
+        "threads_per_core": 2,
+        "physical_cores": 48,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 696320,
+        "free_mem_mib": 606019,
+        "mem_alloc_pct": 0.68,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "cpuqueue",
+          "lazyqueue",
+          "teaching"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-25T09:04:01",
+        "slurmd_start_time": "2026-06-25T09:04:21",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 12
+      },
+      {
+        "node": "mjolnircomp17fl",
+        "class": "other",
+        "class_label": "Other",
+        "arch": "x86_64",
+        "cpu_total": 512,
+        "cpu_alloc": 40,
+        "cpu_alloc_pct": 0.0781,
+        "cpu_load": 47.21,
+        "sockets": 2,
+        "cores_per_socket": 128,
+        "threads_per_core": 2,
+        "physical_cores": 256,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 81920,
+        "free_mem_mib": 868707,
+        "mem_alloc_pct": 0.08,
+        "gpu_type": null,
+        "gpu_total": 0,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": null,
+        "gpu_indexes_allocated": null,
+        "state": "MIXED+DRAIN",
+        "state_base": "MIXED",
+        "drain": true,
+        "down": false,
+        "drain_reason": "maintenance",
+        "drain_since": "2026-06-23T09:28:36",
+        "partitions": [
+          "cpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-05-29T11:51:16",
+        "slurmd_start_time": "2026-05-29T11:51:37",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 2
+      },
+      {
+        "node": "mjolnirgpu01fl",
+        "class": "gpu",
+        "class_label": "GPU",
+        "arch": "x86_64",
+        "cpu_total": 128,
+        "cpu_alloc": 128,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 107.3,
+        "sockets": 2,
+        "cores_per_socket": 32,
+        "threads_per_core": 2,
+        "physical_cores": 64,
+        "real_memory_mib": 1024000,
+        "alloc_mem_mib": 759612,
+        "free_mem_mib": 587155,
+        "mem_alloc_pct": 0.7418,
+        "gpu_type": "a100",
+        "gpu_total": 2,
+        "gpu_alloc": 2,
+        "gpu_alloc_pct": 1.0,
+        "gpu_indexes_allocated": "0-1",
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "cpuqueue",
+          "gpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T10:04:56",
+        "slurmd_start_time": "2026-06-18T10:50:54",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 8
+      },
+      {
+        "node": "mjolnirgpu02fl",
+        "class": "gpu",
+        "class_label": "GPU",
+        "arch": "x86_64",
+        "cpu_total": 256,
+        "cpu_alloc": 174,
+        "cpu_alloc_pct": 0.6797,
+        "cpu_load": 137.04,
+        "sockets": 2,
+        "cores_per_socket": 64,
+        "threads_per_core": 2,
+        "physical_cores": 128,
+        "real_memory_mib": 2002400,
+        "alloc_mem_mib": 1906356,
+        "free_mem_mib": 104714,
+        "mem_alloc_pct": 0.952,
+        "gpu_type": "a100",
+        "gpu_total": 4,
+        "gpu_alloc": 4,
+        "gpu_alloc_pct": 1.0,
+        "gpu_indexes_allocated": "0-3",
+        "state": "MIXED",
+        "state_base": "MIXED",
+        "drain": false,
+        "down": false,
+        "drain_reason": null,
+        "drain_since": null,
+        "partitions": [
+          "cpuqueue",
+          "gpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-06-18T10:05:44",
+        "slurmd_start_time": "2026-06-18T10:07:09",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 15
+      },
+      {
+        "node": "mjolnirgpu03fl",
+        "class": "gpu",
+        "class_label": "GPU",
+        "arch": "x86_64",
+        "cpu_total": 256,
+        "cpu_alloc": 0,
+        "cpu_alloc_pct": 0.0,
+        "cpu_load": 0.05,
+        "sockets": 2,
+        "cores_per_socket": 64,
+        "threads_per_core": 2,
+        "physical_cores": 128,
+        "real_memory_mib": 2002400,
+        "alloc_mem_mib": 0,
+        "free_mem_mib": 1499364,
+        "mem_alloc_pct": 0.0,
+        "gpu_type": "a100",
+        "gpu_total": 4,
+        "gpu_alloc": 0,
+        "gpu_alloc_pct": 0.0,
+        "gpu_indexes_allocated": null,
+        "state": "DOWN*+DRAIN",
+        "state_base": "DOWN",
+        "drain": true,
+        "down": true,
+        "drain_reason": "maintenance",
+        "drain_since": "2026-06-17T10:31:35",
+        "partitions": [
+          "cpuqueue",
+          "gpuqueue",
+          "lazyqueue"
+        ],
+        "weight": 1,
+        "boot_time": "2026-05-17T19:14:22",
+        "slurmd_start_time": "2026-05-27T11:18:09",
+        "os": "Linux",
+        "slurm_version": "20.11.9",
+        "running_jobs_count": 0
+      }
+    ]
+  },
+  "hardware_inventory": {
+    "fleet": {
+      "nodes_total": 20,
+      "logical_cpus_total": 2720,
+      "physical_cores_total": 1360,
+      "ram_mib_total": 23401887,
+      "ram_gib_total": 22853.4,
+      "gpu_total": 10,
+      "gpu_types": [
+        "a100"
+      ]
+    },
+    "profiles": [
+      {
+        "label": "96c / 1000.0 GiB RAM",
+        "node_count": 11,
+        "cpu_total": 96,
+        "real_memory_mib": 1024000,
+        "real_memory_gib": 1000.0,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp01fl",
+          "mjolnircomp02fl",
+          "mjolnircomp03fl",
+          "mjolnircomp04fl",
+          "mjolnircomp10fl",
+          "mjolnircomp11fl",
+          "mjolnircomp12fl",
+          "mjolnircomp13fl",
+          "mjolnircomp14fl",
+          "mjolnircomp15fl",
+          "mjolnircomp16fl"
+        ]
+      },
+      {
+        "label": "256c / 1955.5 GiB RAM / 4x A100",
+        "node_count": 2,
+        "cpu_total": 256,
+        "real_memory_mib": 2002400,
+        "real_memory_gib": 1955.5,
+        "gpu_type": "a100",
+        "gpu_count": 4,
+        "nodes": [
+          "mjolnirgpu02fl",
+          "mjolnirgpu03fl"
+        ]
+      },
+      {
+        "label": "96c / 2000.0 GiB RAM",
+        "node_count": 2,
+        "cpu_total": 96,
+        "real_memory_mib": 2048000,
+        "real_memory_gib": 2000.0,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp08fl",
+          "mjolnircomp09fl"
+        ]
+      },
+      {
+        "label": "128c / 1000.0 GiB RAM / 2x A100",
+        "node_count": 1,
+        "cpu_total": 128,
+        "real_memory_mib": 1024000,
+        "real_memory_gib": 1000.0,
+        "gpu_type": "a100",
+        "gpu_count": 2,
+        "nodes": [
+          "mjolnirgpu01fl"
+        ]
+      },
+      {
+        "label": "128c / 442.5 GiB RAM",
+        "node_count": 1,
+        "cpu_total": 128,
+        "real_memory_mib": 453087,
+        "real_memory_gib": 442.5,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp06fl"
+        ]
+      },
+      {
+        "label": "128c / 500.0 GiB RAM",
+        "node_count": 1,
+        "cpu_total": 128,
+        "real_memory_mib": 512000,
+        "real_memory_gib": 500.0,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp05fl"
+        ]
+      },
+      {
+        "label": "512c / 1000.0 GiB RAM",
+        "node_count": 1,
+        "cpu_total": 512,
+        "real_memory_mib": 1024000,
+        "real_memory_gib": 1000.0,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp17fl"
+        ]
+      },
+      {
+        "label": "64c / 1000.0 GiB RAM",
+        "node_count": 1,
+        "cpu_total": 64,
+        "real_memory_mib": 1024000,
+        "real_memory_gib": 1000.0,
+        "gpu_type": null,
+        "gpu_count": 0,
+        "nodes": [
+          "mjolnircomp07fl"
+        ]
+      }
+    ],
+    "slurm_versions": [
+      {
+        "version": "20.11.9",
+        "node_count": 20
+      }
+    ],
+    "os_kernel_builds": [
+      {
+        "os": "Linux",
+        "node_count": 20
+      }
+    ],
+    "kernel_drift": {
+      "note": "All nodes report identical OS/kernel builds."
     }
-  ],
-  "nodes": [
-    {
-      "node_name": "mjolnircomp01fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.3994,
-      "gpu_pct": null
+  },
+  "capacity_planning": {
+    "history_status": {
+      "collecting_since": null,
+      "note": "Pressure trend is shown on the chart above, sourced from the hourly Node Insights collector."
     },
-    {
-      "node_name": "mjolnircomp02fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.7165,
-      "gpu_pct": null
+    "pressure": {
+      "cpu": {
+        "alloc_pct": 0.65,
+        "alloc": 1768,
+        "total": 2720,
+        "reading": "good"
+      },
+      "memory": {
+        "alloc_pct": 0.4331,
+        "alloc": 10135665,
+        "total": 23401892,
+        "reading": "good"
+      },
+      "gpu": {
+        "alloc_pct": 0.6,
+        "alloc_pct_of_online": 1.0,
+        "alloc": 6,
+        "total": 10,
+        "online_total": 6,
+        "reading": "bad"
+      }
     },
-    {
-      "node_name": "mjolnircomp03fl",
-      "node_state": "IDLE+DRAIN",
-      "cpu_pct": 0.0,
-      "memory_pct": 0.0,
-      "gpu_pct": null
+    "queue_pressure": {
+      "pending_total": 367,
+      "pending_reasons": [
+        {
+          "reason": "Priority",
+          "count": 358
+        },
+        {
+          "reason": "JobArrayTaskLimit",
+          "count": 4
+        },
+        {
+          "reason": "Resources",
+          "count": 2
+        },
+        {
+          "reason": "Dependency",
+          "count": 2
+        },
+        {
+          "reason": "DependencyNeverSatisfied",
+          "count": 1
+        }
+      ]
     },
-    {
-      "node_name": "mjolnircomp04fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.3594,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp05fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9688,
-      "memory_pct": 0.9514,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp06fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9219,
-      "memory_pct": 0.7949,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp07fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.868,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp08fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9792,
-      "memory_pct": 0.1209,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp09fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9583,
-      "memory_pct": 0.1648,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp10fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.4137,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp11fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9792,
-      "memory_pct": 0.5163,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp12fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.649,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp13fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.57,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp14fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.6925,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp15fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.3973,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp16fl",
-      "node_state": "ALLOCATED",
-      "cpu_pct": 1.0,
-      "memory_pct": 0.68,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnircomp17fl",
-      "node_state": "MIXED+DRAIN",
-      "cpu_pct": 0.0781,
-      "memory_pct": 0.08,
-      "gpu_pct": null
-    },
-    {
-      "node_name": "mjolnirgpu01fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.9062,
-      "memory_pct": 0.9733,
-      "gpu_pct": 0.0
-    },
-    {
-      "node_name": "mjolnirgpu02fl",
-      "node_state": "MIXED",
-      "cpu_pct": 0.6797,
-      "memory_pct": 0.952,
-      "gpu_pct": 0.0
-    },
-    {
-      "node_name": "mjolnirgpu03fl",
-      "node_state": "DOWN*+DRAIN",
-      "cpu_pct": 0.0,
-      "memory_pct": 0.0,
-      "gpu_pct": 0.0
+    "maintenance_exposure": {
+      "nodes_draining": 3,
+      "nodes_draining_pct": 0.15,
+      "cpu_removed": 864,
+      "cpu_removed_pct": 0.3176,
+      "gpu_removed": 4,
+      "gpu_removed_pct": 0.4
     }
-  ]
+  }
 }
