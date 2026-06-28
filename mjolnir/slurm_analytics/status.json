@@ -1,22 +1,28 @@
 {
   "schema_version": "slurm-analytics-pipeline-v1",
-  "generated_at": "2026-06-27T22:36:38Z",
+  "generated_at": "2026-06-28T00:39:47Z",
   "collector": "slurm_analytics_pipeline",
   "collector_status": "ok",
   "platform_module": "Analytics Pipeline",
   "data_window_days": 748,
   "warehouse": {
     "warehouse_version": "1.0",
+    "db_schema_version": 1,
     "total_jobs": 22109943,
     "total_accounting_records": 55106885,
+    "total_job_steps": 32449816,
     "total_users": 306,
     "total_projects": 35,
+    "total_accounts": 4,
+    "total_partitions": 6,
     "database_size_bytes": 42842030080,
     "earliest_date": "2024-06-10",
     "latest_date": "2026-06-27",
     "last_import_at": "2026-06-27T22:30:17Z",
     "last_materialization_at": "2026-06-27T22:31:28Z",
-    "last_success_at": "2026-06-27T15:01:52Z",
+    "last_publish_at": "2026-06-27T22:36:40Z",
+    "last_publish_status": "ok",
+    "last_success_at": "2026-06-27T22:40:49Z",
     "last_failure_at": "2026-06-27T22:25:16Z"
   }
 }
