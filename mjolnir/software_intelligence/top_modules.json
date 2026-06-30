@@ -1,0 +1,427 @@
+{
+  "schema_version": "software-intelligence-v1",
+  "generated_at": "2026-06-30T21:01:13Z",
+  "collector": "software_intelligence_export",
+  "collector_status": "ok",
+  "platform_module": "Software Intelligence",
+  "failure_message": null,
+  "expected_refresh_seconds": 86400,
+  "warning_after_intervals": 2,
+  "critical_after_intervals": 3,
+  "top_modules": {
+    "all_time": [
+      {
+        "module_name": "samtools",
+        "jobs": 3196,
+        "unique_users": 1975,
+        "cpu_hours": 58241.32,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "python",
+        "jobs": 1944,
+        "unique_users": 1430,
+        "cpu_hours": 37547.65,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 1318,
+        "unique_users": 1065,
+        "cpu_hours": 25761.07,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "star",
+        "jobs": 1312,
+        "unique_users": 1042,
+        "cpu_hours": 24127.19,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 1299,
+        "unique_users": 1048,
+        "cpu_hours": 23630.32,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "cuda",
+        "jobs": 1273,
+        "unique_users": 1054,
+        "cpu_hours": 24313.16,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 1267,
+        "unique_users": 1039,
+        "cpu_hours": 23957.73,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 686,
+        "unique_users": 618,
+        "cpu_hours": 12980.98,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 673,
+        "unique_users": 601,
+        "cpu_hours": 12484.11,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "r",
+        "jobs": 671,
+        "unique_users": 589,
+        "cpu_hours": 13234.49,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 670,
+        "unique_users": 587,
+        "cpu_hours": 11164.49,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "tensorflow",
+        "jobs": 639,
+        "unique_users": 564,
+        "cpu_hours": 12101.61,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 638,
+        "unique_users": 578,
+        "cpu_hours": 11485.15,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 635,
+        "unique_users": 566,
+        "cpu_hours": 11177.64,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "pytorch",
+        "jobs": 634,
+        "unique_users": 576,
+        "cpu_hours": 12211.55,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 633,
+        "unique_users": 517,
+        "cpu_hours": 11972.89,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 632,
+        "unique_users": 539,
+        "cpu_hours": 12780.09,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      }
+    ],
+    "rolling_7d": [
+      {
+        "module_name": "samtools",
+        "jobs": 273,
+        "unique_users": 134,
+        "cpu_hours": 5380.78,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "python",
+        "jobs": 157,
+        "unique_users": 107,
+        "cpu_hours": 3526.85,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 126,
+        "unique_users": 87,
+        "cpu_hours": 2439.95,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "star",
+        "jobs": 112,
+        "unique_users": 77,
+        "cpu_hours": 2137.92,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 104,
+        "unique_users": 71,
+        "cpu_hours": 1830.08,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "cuda",
+        "jobs": 102,
+        "unique_users": 77,
+        "cpu_hours": 2312.89,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 88,
+        "unique_users": 68,
+        "cpu_hours": 1652.49,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 69,
+        "unique_users": 59,
+        "cpu_hours": 1190.55,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 64,
+        "unique_users": 53,
+        "cpu_hours": 1079.46,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 64,
+        "unique_users": 47,
+        "cpu_hours": 1399.42,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 55,
+        "unique_users": 46,
+        "cpu_hours": 888.51,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "r",
+        "jobs": 55,
+        "unique_users": 46,
+        "cpu_hours": 1213.96,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "pytorch",
+        "jobs": 52,
+        "unique_users": 42,
+        "cpu_hours": 1515.71,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "tensorflow",
+        "jobs": 50,
+        "unique_users": 43,
+        "cpu_hours": 797.18,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 49,
+        "unique_users": 39,
+        "cpu_hours": 941.57,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 42,
+        "unique_users": 37,
+        "cpu_hours": 560.76,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 39,
+        "unique_users": 34,
+        "cpu_hours": 710.92,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      }
+    ],
+    "rolling_30d": [
+      {
+        "module_name": "samtools",
+        "jobs": 1097,
+        "unique_users": 634,
+        "cpu_hours": 20494.26,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "python",
+        "jobs": 672,
+        "unique_users": 474,
+        "cpu_hours": 13826.28,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 474,
+        "unique_users": 365,
+        "cpu_hours": 8812.01,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "star",
+        "jobs": 465,
+        "unique_users": 337,
+        "cpu_hours": 8741.26,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 447,
+        "unique_users": 350,
+        "cpu_hours": 8676.05,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "cuda",
+        "jobs": 444,
+        "unique_users": 346,
+        "cpu_hours": 8879.83,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 418,
+        "unique_users": 326,
+        "cpu_hours": 8035.45,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 245,
+        "unique_users": 211,
+        "cpu_hours": 4470.69,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 236,
+        "unique_users": 207,
+        "cpu_hours": 4399.94,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 230,
+        "unique_users": 186,
+        "cpu_hours": 4012.66,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "r",
+        "jobs": 228,
+        "unique_users": 198,
+        "cpu_hours": 4946.45,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "pytorch",
+        "jobs": 225,
+        "unique_users": 201,
+        "cpu_hours": 4829.36,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 220,
+        "unique_users": 194,
+        "cpu_hours": 4104.84,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "tensorflow",
+        "jobs": 219,
+        "unique_users": 193,
+        "cpu_hours": 4050.47,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 211,
+        "unique_users": 177,
+        "cpu_hours": 4276.12,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 207,
+        "unique_users": 181,
+        "cpu_hours": 3759.33,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 205,
+        "unique_users": 182,
+        "cpu_hours": 3705.82,
+        "first_seen": "2026-04-01",
+        "last_seen": "2026-06-29"
+      }
+    ]
+  }
+}

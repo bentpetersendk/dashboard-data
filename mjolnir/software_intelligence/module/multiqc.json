@@ -1,0 +1,1385 @@
+{
+  "schema_version": "software-intelligence-v1",
+  "generated_at": "2026-06-30T21:01:13Z",
+  "collector": "software_intelligence_export",
+  "collector_status": "ok",
+  "platform_module": "Software Intelligence",
+  "failure_message": null,
+  "expected_refresh_seconds": 86400,
+  "warning_after_intervals": 2,
+  "critical_after_intervals": 3,
+  "module": {
+    "module_name": "multiqc",
+    "total_jobs": 1299,
+    "total_users": 40,
+    "total_cpu_hours": 23630.31,
+    "trend_direction": "up",
+    "jobs_today": 18,
+    "version_info": {
+      "latest_version": "1.21",
+      "most_used_version": "1.21",
+      "versions": [
+        {
+          "module_name": "multiqc",
+          "module_version": "1.21",
+          "jobs": 752,
+          "users": 20,
+          "first_seen": "2026-04-01",
+          "last_seen": "2026-06-29"
+        },
+        {
+          "module_name": "multiqc",
+          "module_version": "1.13",
+          "jobs": 547,
+          "users": 20,
+          "first_seen": "2026-04-01",
+          "last_seen": "2026-06-29"
+        }
+      ]
+    },
+    "related_modules": [
+      {
+        "module": "fastqc",
+        "count": 673,
+        "confidence": 1.0,
+        "lift": 5.494226327944573
+      },
+      {
+        "module": "samtools",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 1.0761532169253136
+      },
+      {
+        "module": "star",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 2.621482988790627
+      }
+    ],
+    "daily_history": [
+      {
+        "date": "2026-04-01",
+        "jobs": 17,
+        "cpu_hours": 524.22
+      },
+      {
+        "date": "2026-04-02",
+        "jobs": 12,
+        "cpu_hours": 316.07
+      },
+      {
+        "date": "2026-04-03",
+        "jobs": 12,
+        "cpu_hours": 96.39
+      },
+      {
+        "date": "2026-04-04",
+        "jobs": 14,
+        "cpu_hours": 278.38
+      },
+      {
+        "date": "2026-04-05",
+        "jobs": 22,
+        "cpu_hours": 402.22
+      },
+      {
+        "date": "2026-04-06",
+        "jobs": 13,
+        "cpu_hours": 347.4
+      },
+      {
+        "date": "2026-04-07",
+        "jobs": 9,
+        "cpu_hours": 162.37
+      },
+      {
+        "date": "2026-04-08",
+        "jobs": 24,
+        "cpu_hours": 368.1
+      },
+      {
+        "date": "2026-04-09",
+        "jobs": 17,
+        "cpu_hours": 175.61
+      },
+      {
+        "date": "2026-04-10",
+        "jobs": 11,
+        "cpu_hours": 112.49
+      },
+      {
+        "date": "2026-04-11",
+        "jobs": 15,
+        "cpu_hours": 389.28
+      },
+      {
+        "date": "2026-04-12",
+        "jobs": 14,
+        "cpu_hours": 234.06
+      },
+      {
+        "date": "2026-04-13",
+        "jobs": 15,
+        "cpu_hours": 293.85
+      },
+      {
+        "date": "2026-04-14",
+        "jobs": 9,
+        "cpu_hours": 211.24
+      },
+      {
+        "date": "2026-04-15",
+        "jobs": 15,
+        "cpu_hours": 310.09
+      },
+      {
+        "date": "2026-04-16",
+        "jobs": 13,
+        "cpu_hours": 254.89
+      },
+      {
+        "date": "2026-04-17",
+        "jobs": 12,
+        "cpu_hours": 232.48
+      },
+      {
+        "date": "2026-04-18",
+        "jobs": 11,
+        "cpu_hours": 161.85
+      },
+      {
+        "date": "2026-04-19",
+        "jobs": 9,
+        "cpu_hours": 163.85
+      },
+      {
+        "date": "2026-04-20",
+        "jobs": 18,
+        "cpu_hours": 325.76
+      },
+      {
+        "date": "2026-04-21",
+        "jobs": 16,
+        "cpu_hours": 308.62
+      },
+      {
+        "date": "2026-04-22",
+        "jobs": 14,
+        "cpu_hours": 315.83
+      },
+      {
+        "date": "2026-04-23",
+        "jobs": 16,
+        "cpu_hours": 191.22
+      },
+      {
+        "date": "2026-04-24",
+        "jobs": 7,
+        "cpu_hours": 81.82
+      },
+      {
+        "date": "2026-04-25",
+        "jobs": 15,
+        "cpu_hours": 216.66
+      },
+      {
+        "date": "2026-04-26",
+        "jobs": 6,
+        "cpu_hours": 165.13
+      },
+      {
+        "date": "2026-04-27",
+        "jobs": 22,
+        "cpu_hours": 219.08
+      },
+      {
+        "date": "2026-04-28",
+        "jobs": 16,
+        "cpu_hours": 223.91
+      },
+      {
+        "date": "2026-04-29",
+        "jobs": 15,
+        "cpu_hours": 259.73
+      },
+      {
+        "date": "2026-04-30",
+        "jobs": 15,
+        "cpu_hours": 230.92
+      },
+      {
+        "date": "2026-05-01",
+        "jobs": 11,
+        "cpu_hours": 105.47
+      },
+      {
+        "date": "2026-05-02",
+        "jobs": 19,
+        "cpu_hours": 279.38
+      },
+      {
+        "date": "2026-05-03",
+        "jobs": 7,
+        "cpu_hours": 140.06
+      },
+      {
+        "date": "2026-05-04",
+        "jobs": 20,
+        "cpu_hours": 275.11
+      },
+      {
+        "date": "2026-05-05",
+        "jobs": 13,
+        "cpu_hours": 243.22
+      },
+      {
+        "date": "2026-05-06",
+        "jobs": 7,
+        "cpu_hours": 200.46
+      },
+      {
+        "date": "2026-05-07",
+        "jobs": 15,
+        "cpu_hours": 275.01
+      },
+      {
+        "date": "2026-05-08",
+        "jobs": 16,
+        "cpu_hours": 257.15
+      },
+      {
+        "date": "2026-05-09",
+        "jobs": 9,
+        "cpu_hours": 209.41
+      },
+      {
+        "date": "2026-05-10",
+        "jobs": 12,
+        "cpu_hours": 226.41
+      },
+      {
+        "date": "2026-05-11",
+        "jobs": 15,
+        "cpu_hours": 211.17
+      },
+      {
+        "date": "2026-05-12",
+        "jobs": 17,
+        "cpu_hours": 302.35
+      },
+      {
+        "date": "2026-05-13",
+        "jobs": 22,
+        "cpu_hours": 352.02
+      },
+      {
+        "date": "2026-05-14",
+        "jobs": 12,
+        "cpu_hours": 86.5
+      },
+      {
+        "date": "2026-05-15",
+        "jobs": 15,
+        "cpu_hours": 487.99
+      },
+      {
+        "date": "2026-05-16",
+        "jobs": 11,
+        "cpu_hours": 202.88
+      },
+      {
+        "date": "2026-05-17",
+        "jobs": 11,
+        "cpu_hours": 218.79
+      },
+      {
+        "date": "2026-05-18",
+        "jobs": 19,
+        "cpu_hours": 458.79
+      },
+      {
+        "date": "2026-05-19",
+        "jobs": 10,
+        "cpu_hours": 220.41
+      },
+      {
+        "date": "2026-05-20",
+        "jobs": 13,
+        "cpu_hours": 96.13
+      },
+      {
+        "date": "2026-05-21",
+        "jobs": 12,
+        "cpu_hours": 143.34
+      },
+      {
+        "date": "2026-05-22",
+        "jobs": 14,
+        "cpu_hours": 311.16
+      },
+      {
+        "date": "2026-05-23",
+        "jobs": 16,
+        "cpu_hours": 287.81
+      },
+      {
+        "date": "2026-05-24",
+        "jobs": 11,
+        "cpu_hours": 220.47
+      },
+      {
+        "date": "2026-05-25",
+        "jobs": 11,
+        "cpu_hours": 182.65
+      },
+      {
+        "date": "2026-05-26",
+        "jobs": 16,
+        "cpu_hours": 397.59
+      },
+      {
+        "date": "2026-05-27",
+        "jobs": 12,
+        "cpu_hours": 117.58
+      },
+      {
+        "date": "2026-05-28",
+        "jobs": 9,
+        "cpu_hours": 212.35
+      },
+      {
+        "date": "2026-05-29",
+        "jobs": 18,
+        "cpu_hours": 348.58
+      },
+      {
+        "date": "2026-05-30",
+        "jobs": 8,
+        "cpu_hours": 174.56
+      },
+      {
+        "date": "2026-05-31",
+        "jobs": 12,
+        "cpu_hours": 271.79
+      },
+      {
+        "date": "2026-06-01",
+        "jobs": 20,
+        "cpu_hours": 279.12
+      },
+      {
+        "date": "2026-06-02",
+        "jobs": 15,
+        "cpu_hours": 205.84
+      },
+      {
+        "date": "2026-06-03",
+        "jobs": 11,
+        "cpu_hours": 210.3
+      },
+      {
+        "date": "2026-06-04",
+        "jobs": 16,
+        "cpu_hours": 282.8
+      },
+      {
+        "date": "2026-06-05",
+        "jobs": 6,
+        "cpu_hours": 173.63
+      },
+      {
+        "date": "2026-06-06",
+        "jobs": 14,
+        "cpu_hours": 346.7
+      },
+      {
+        "date": "2026-06-07",
+        "jobs": 19,
+        "cpu_hours": 424.83
+      },
+      {
+        "date": "2026-06-08",
+        "jobs": 19,
+        "cpu_hours": 363.8
+      },
+      {
+        "date": "2026-06-09",
+        "jobs": 22,
+        "cpu_hours": 287.87
+      },
+      {
+        "date": "2026-06-10",
+        "jobs": 13,
+        "cpu_hours": 212.06
+      },
+      {
+        "date": "2026-06-11",
+        "jobs": 14,
+        "cpu_hours": 261.77
+      },
+      {
+        "date": "2026-06-12",
+        "jobs": 12,
+        "cpu_hours": 118.81
+      },
+      {
+        "date": "2026-06-13",
+        "jobs": 18,
+        "cpu_hours": 265.84
+      },
+      {
+        "date": "2026-06-14",
+        "jobs": 18,
+        "cpu_hours": 276.41
+      },
+      {
+        "date": "2026-06-15",
+        "jobs": 10,
+        "cpu_hours": 381.54
+      },
+      {
+        "date": "2026-06-16",
+        "jobs": 11,
+        "cpu_hours": 154.62
+      },
+      {
+        "date": "2026-06-17",
+        "jobs": 11,
+        "cpu_hours": 142.62
+      },
+      {
+        "date": "2026-06-18",
+        "jobs": 16,
+        "cpu_hours": 328.81
+      },
+      {
+        "date": "2026-06-19",
+        "jobs": 22,
+        "cpu_hours": 518.3
+      },
+      {
+        "date": "2026-06-20",
+        "jobs": 16,
+        "cpu_hours": 164.74
+      },
+      {
+        "date": "2026-06-21",
+        "jobs": 13,
+        "cpu_hours": 352.85
+      },
+      {
+        "date": "2026-06-22",
+        "jobs": 20,
+        "cpu_hours": 347.0
+      },
+      {
+        "date": "2026-06-23",
+        "jobs": 12,
+        "cpu_hours": 154.76
+      },
+      {
+        "date": "2026-06-24",
+        "jobs": 19,
+        "cpu_hours": 419.48
+      },
+      {
+        "date": "2026-06-25",
+        "jobs": 9,
+        "cpu_hours": 182.87
+      },
+      {
+        "date": "2026-06-26",
+        "jobs": 21,
+        "cpu_hours": 373.49
+      },
+      {
+        "date": "2026-06-27",
+        "jobs": 23,
+        "cpu_hours": 336.41
+      },
+      {
+        "date": "2026-06-28",
+        "jobs": 24,
+        "cpu_hours": 445.99
+      },
+      {
+        "date": "2026-06-29",
+        "jobs": 18,
+        "cpu_hours": 526.94
+      }
+    ],
+    "version_daily_history": [
+      {
+        "date": "2026-04-01",
+        "version": "1.13",
+        "jobs": 15
+      },
+      {
+        "date": "2026-04-01",
+        "version": "1.21",
+        "jobs": 2
+      },
+      {
+        "date": "2026-04-02",
+        "version": "1.13",
+        "jobs": 12
+      },
+      {
+        "date": "2026-04-03",
+        "version": "1.13",
+        "jobs": 11
+      },
+      {
+        "date": "2026-04-03",
+        "version": "1.21",
+        "jobs": 1
+      },
+      {
+        "date": "2026-04-04",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-04-04",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-05",
+        "version": "1.13",
+        "jobs": 16
+      },
+      {
+        "date": "2026-04-05",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-04-06",
+        "version": "1.13",
+        "jobs": 11
+      },
+      {
+        "date": "2026-04-06",
+        "version": "1.21",
+        "jobs": 2
+      },
+      {
+        "date": "2026-04-07",
+        "version": "1.13",
+        "jobs": 6
+      },
+      {
+        "date": "2026-04-07",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-08",
+        "version": "1.13",
+        "jobs": 18
+      },
+      {
+        "date": "2026-04-08",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-04-09",
+        "version": "1.13",
+        "jobs": 13
+      },
+      {
+        "date": "2026-04-09",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-10",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-04-10",
+        "version": "1.21",
+        "jobs": 1
+      },
+      {
+        "date": "2026-04-11",
+        "version": "1.13",
+        "jobs": 11
+      },
+      {
+        "date": "2026-04-11",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-12",
+        "version": "1.13",
+        "jobs": 11
+      },
+      {
+        "date": "2026-04-12",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-13",
+        "version": "1.13",
+        "jobs": 14
+      },
+      {
+        "date": "2026-04-13",
+        "version": "1.21",
+        "jobs": 1
+      },
+      {
+        "date": "2026-04-14",
+        "version": "1.13",
+        "jobs": 9
+      },
+      {
+        "date": "2026-04-15",
+        "version": "1.13",
+        "jobs": 12
+      },
+      {
+        "date": "2026-04-15",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-16",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-04-16",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-17",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-04-17",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-18",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-04-18",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-19",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-04-19",
+        "version": "1.21",
+        "jobs": 2
+      },
+      {
+        "date": "2026-04-20",
+        "version": "1.13",
+        "jobs": 13
+      },
+      {
+        "date": "2026-04-20",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-04-21",
+        "version": "1.13",
+        "jobs": 13
+      },
+      {
+        "date": "2026-04-21",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-22",
+        "version": "1.13",
+        "jobs": 12
+      },
+      {
+        "date": "2026-04-22",
+        "version": "1.21",
+        "jobs": 2
+      },
+      {
+        "date": "2026-04-23",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-04-23",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-04-24",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-24",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-25",
+        "version": "1.13",
+        "jobs": 9
+      },
+      {
+        "date": "2026-04-25",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-04-26",
+        "version": "1.13",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-26",
+        "version": "1.21",
+        "jobs": 3
+      },
+      {
+        "date": "2026-04-27",
+        "version": "1.13",
+        "jobs": 12
+      },
+      {
+        "date": "2026-04-27",
+        "version": "1.21",
+        "jobs": 10
+      },
+      {
+        "date": "2026-04-28",
+        "version": "1.13",
+        "jobs": 9
+      },
+      {
+        "date": "2026-04-28",
+        "version": "1.21",
+        "jobs": 7
+      },
+      {
+        "date": "2026-04-29",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-04-29",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-04-30",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-04-30",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-05-01",
+        "version": "1.13",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-01",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-02",
+        "version": "1.13",
+        "jobs": 9
+      },
+      {
+        "date": "2026-05-02",
+        "version": "1.21",
+        "jobs": 10
+      },
+      {
+        "date": "2026-05-03",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-05-03",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-04",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-05-04",
+        "version": "1.21",
+        "jobs": 10
+      },
+      {
+        "date": "2026-05-05",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-05-05",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-06",
+        "version": "1.13",
+        "jobs": 3
+      },
+      {
+        "date": "2026-05-06",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-07",
+        "version": "1.13",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-07",
+        "version": "1.21",
+        "jobs": 9
+      },
+      {
+        "date": "2026-05-08",
+        "version": "1.13",
+        "jobs": 9
+      },
+      {
+        "date": "2026-05-08",
+        "version": "1.21",
+        "jobs": 7
+      },
+      {
+        "date": "2026-05-09",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-09",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-10",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-10",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-11",
+        "version": "1.13",
+        "jobs": 10
+      },
+      {
+        "date": "2026-05-11",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-12",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-12",
+        "version": "1.21",
+        "jobs": 9
+      },
+      {
+        "date": "2026-05-13",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-13",
+        "version": "1.21",
+        "jobs": 14
+      },
+      {
+        "date": "2026-05-14",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-14",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-15",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-15",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-05-16",
+        "version": "1.13",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-16",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-17",
+        "version": "1.13",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-17",
+        "version": "1.21",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-18",
+        "version": "1.13",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-18",
+        "version": "1.21",
+        "jobs": 14
+      },
+      {
+        "date": "2026-05-19",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-05-19",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-20",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-20",
+        "version": "1.21",
+        "jobs": 9
+      },
+      {
+        "date": "2026-05-21",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-05-21",
+        "version": "1.21",
+        "jobs": 5
+      },
+      {
+        "date": "2026-05-22",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-22",
+        "version": "1.21",
+        "jobs": 10
+      },
+      {
+        "date": "2026-05-23",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-23",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-24",
+        "version": "1.13",
+        "jobs": 3
+      },
+      {
+        "date": "2026-05-24",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-25",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-25",
+        "version": "1.21",
+        "jobs": 7
+      },
+      {
+        "date": "2026-05-26",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-26",
+        "version": "1.21",
+        "jobs": 12
+      },
+      {
+        "date": "2026-05-27",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-27",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-05-28",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-05-28",
+        "version": "1.21",
+        "jobs": 7
+      },
+      {
+        "date": "2026-05-29",
+        "version": "1.13",
+        "jobs": 6
+      },
+      {
+        "date": "2026-05-29",
+        "version": "1.21",
+        "jobs": 12
+      },
+      {
+        "date": "2026-05-30",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-30",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-05-31",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-05-31",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-01",
+        "version": "1.13",
+        "jobs": 8
+      },
+      {
+        "date": "2026-06-01",
+        "version": "1.21",
+        "jobs": 12
+      },
+      {
+        "date": "2026-06-02",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-06-02",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-03",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-03",
+        "version": "1.21",
+        "jobs": 9
+      },
+      {
+        "date": "2026-06-04",
+        "version": "1.13",
+        "jobs": 5
+      },
+      {
+        "date": "2026-06-04",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-05",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-05",
+        "version": "1.21",
+        "jobs": 4
+      },
+      {
+        "date": "2026-06-06",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-06",
+        "version": "1.21",
+        "jobs": 13
+      },
+      {
+        "date": "2026-06-07",
+        "version": "1.13",
+        "jobs": 5
+      },
+      {
+        "date": "2026-06-07",
+        "version": "1.21",
+        "jobs": 14
+      },
+      {
+        "date": "2026-06-08",
+        "version": "1.13",
+        "jobs": 6
+      },
+      {
+        "date": "2026-06-08",
+        "version": "1.21",
+        "jobs": 13
+      },
+      {
+        "date": "2026-06-09",
+        "version": "1.13",
+        "jobs": 7
+      },
+      {
+        "date": "2026-06-09",
+        "version": "1.21",
+        "jobs": 15
+      },
+      {
+        "date": "2026-06-10",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-10",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-11",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-11",
+        "version": "1.21",
+        "jobs": 12
+      },
+      {
+        "date": "2026-06-12",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-06-12",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-06-13",
+        "version": "1.13",
+        "jobs": 3
+      },
+      {
+        "date": "2026-06-13",
+        "version": "1.21",
+        "jobs": 15
+      },
+      {
+        "date": "2026-06-14",
+        "version": "1.13",
+        "jobs": 3
+      },
+      {
+        "date": "2026-06-14",
+        "version": "1.21",
+        "jobs": 15
+      },
+      {
+        "date": "2026-06-15",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-15",
+        "version": "1.21",
+        "jobs": 8
+      },
+      {
+        "date": "2026-06-16",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-06-16",
+        "version": "1.21",
+        "jobs": 7
+      },
+      {
+        "date": "2026-06-17",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-18",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-18",
+        "version": "1.21",
+        "jobs": 15
+      },
+      {
+        "date": "2026-06-19",
+        "version": "1.13",
+        "jobs": 4
+      },
+      {
+        "date": "2026-06-19",
+        "version": "1.21",
+        "jobs": 18
+      },
+      {
+        "date": "2026-06-20",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-20",
+        "version": "1.21",
+        "jobs": 15
+      },
+      {
+        "date": "2026-06-21",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-21",
+        "version": "1.21",
+        "jobs": 11
+      },
+      {
+        "date": "2026-06-22",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-22",
+        "version": "1.21",
+        "jobs": 19
+      },
+      {
+        "date": "2026-06-23",
+        "version": "1.13",
+        "jobs": 2
+      },
+      {
+        "date": "2026-06-23",
+        "version": "1.21",
+        "jobs": 10
+      },
+      {
+        "date": "2026-06-24",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-24",
+        "version": "1.21",
+        "jobs": 18
+      },
+      {
+        "date": "2026-06-25",
+        "version": "1.21",
+        "jobs": 9
+      },
+      {
+        "date": "2026-06-26",
+        "version": "1.21",
+        "jobs": 21
+      },
+      {
+        "date": "2026-06-27",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-27",
+        "version": "1.21",
+        "jobs": 22
+      },
+      {
+        "date": "2026-06-28",
+        "version": "1.21",
+        "jobs": 24
+      },
+      {
+        "date": "2026-06-29",
+        "version": "1.13",
+        "jobs": 1
+      },
+      {
+        "date": "2026-06-29",
+        "version": "1.21",
+        "jobs": 17
+      }
+    ]
+  }
+}

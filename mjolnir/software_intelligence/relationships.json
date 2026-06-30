@@ -1,0 +1,321 @@
+{
+  "schema_version": "software-intelligence-v1",
+  "generated_at": "2026-06-30T21:01:13Z",
+  "collector": "software_intelligence_export",
+  "collector_status": "ok",
+  "platform_module": "Software Intelligence",
+  "failure_message": null,
+  "expected_refresh_seconds": 86400,
+  "warning_after_intervals": 2,
+  "critical_after_intervals": 3,
+  "relationships": {
+    "cuda": [
+      {
+        "module": "python",
+        "count": 1273,
+        "confidence": 1.0,
+        "lift": 3.671296296296296
+      },
+      {
+        "module": "tensorflow",
+        "count": 639,
+        "confidence": 0.5019638648860958,
+        "lift": 5.606441476826394
+      },
+      {
+        "module": "pytorch",
+        "count": 634,
+        "confidence": 0.49803613511390415,
+        "lift": 5.606441476826395
+      }
+    ],
+    "python": [
+      {
+        "module": "cuda",
+        "count": 1273,
+        "confidence": 1.0,
+        "lift": 3.671296296296296
+      },
+      {
+        "module": "r",
+        "count": 671,
+        "confidence": 0.34516460905349794,
+        "lift": 3.6712962962962963
+      },
+      {
+        "module": "tensorflow",
+        "count": 639,
+        "confidence": 0.3287037037037037,
+        "lift": 3.6712962962962967
+      },
+      {
+        "module": "pytorch",
+        "count": 634,
+        "confidence": 0.32613168724279834,
+        "lift": 3.6712962962962963
+      }
+    ],
+    "bcftools": [
+      {
+        "module": "samtools",
+        "count": 1267,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      },
+      {
+        "module": "gatk",
+        "count": 635,
+        "confidence": 0.5011838989739542,
+        "lift": 5.6329913180741915
+      },
+      {
+        "module": "nextflow",
+        "count": 632,
+        "confidence": 0.4988161010260458,
+        "lift": 2.7011005409885347
+      },
+      {
+        "module": "singularity",
+        "count": 632,
+        "confidence": 0.4988161010260458,
+        "lift": 5.632991318074191
+      }
+    ],
+    "samtools": [
+      {
+        "module": "bcftools",
+        "count": 1267,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      },
+      {
+        "module": "bowtie2",
+        "count": 670,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      },
+      {
+        "module": "gatk",
+        "count": 635,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      },
+      {
+        "module": "bwa",
+        "count": 633,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      },
+      {
+        "module": "nextflow",
+        "count": 632,
+        "confidence": 0.4795144157814871,
+        "lift": 1.070805502325555
+      },
+      {
+        "module": "singularity",
+        "count": 632,
+        "confidence": 0.19774718397997496,
+        "lift": 2.233103879849812
+      },
+      {
+        "module": "multiqc",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 1.0761532169253136
+      },
+      {
+        "module": "star",
+        "count": 626,
+        "confidence": 0.19586983729662077,
+        "lift": 1.06549011340395
+      }
+    ],
+    "apptainer": [
+      {
+        "module": "nextflow",
+        "count": 686,
+        "confidence": 1.0,
+        "lift": 5.415022761760243
+      },
+      {
+        "module": "star",
+        "count": 686,
+        "confidence": 1.0,
+        "lift": 5.439786585365853
+      }
+    ],
+    "nextflow": [
+      {
+        "module": "apptainer",
+        "count": 686,
+        "confidence": 1.0,
+        "lift": 5.415022761760243
+      },
+      {
+        "module": "star",
+        "count": 686,
+        "confidence": 0.5204855842185129,
+        "lift": 2.8313304989081756
+      },
+      {
+        "module": "bcftools",
+        "count": 632,
+        "confidence": 0.4988161010260458,
+        "lift": 2.7011005409885347
+      },
+      {
+        "module": "samtools",
+        "count": 632,
+        "confidence": 0.4795144157814871,
+        "lift": 1.070805502325555
+      },
+      {
+        "module": "singularity",
+        "count": 632,
+        "confidence": 0.4795144157814871,
+        "lift": 5.415022761760243
+      }
+    ],
+    "star": [
+      {
+        "module": "apptainer",
+        "count": 686,
+        "confidence": 1.0,
+        "lift": 5.439786585365853
+      },
+      {
+        "module": "nextflow",
+        "count": 686,
+        "confidence": 0.5204855842185129,
+        "lift": 2.8313304989081756
+      },
+      {
+        "module": "multiqc",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 2.621482988790627
+      },
+      {
+        "module": "samtools",
+        "count": 626,
+        "confidence": 0.19586983729662077,
+        "lift": 1.06549011340395
+      }
+    ],
+    "fastqc": [
+      {
+        "module": "multiqc",
+        "count": 673,
+        "confidence": 1.0,
+        "lift": 5.494226327944573
+      }
+    ],
+    "multiqc": [
+      {
+        "module": "fastqc",
+        "count": 673,
+        "confidence": 1.0,
+        "lift": 5.494226327944573
+      },
+      {
+        "module": "samtools",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 1.0761532169253136
+      },
+      {
+        "module": "star",
+        "count": 626,
+        "confidence": 0.4819091608929946,
+        "lift": 2.621482988790627
+      }
+    ],
+    "r": [
+      {
+        "module": "python",
+        "count": 671,
+        "confidence": 0.34516460905349794,
+        "lift": 3.6712962962962963
+      }
+    ],
+    "bowtie2": [
+      {
+        "module": "samtools",
+        "count": 670,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      }
+    ],
+    "tensorflow": [
+      {
+        "module": "cuda",
+        "count": 639,
+        "confidence": 0.5019638648860958,
+        "lift": 5.606441476826394
+      },
+      {
+        "module": "python",
+        "count": 639,
+        "confidence": 0.3287037037037037,
+        "lift": 3.6712962962962967
+      }
+    ],
+    "gatk": [
+      {
+        "module": "bcftools",
+        "count": 635,
+        "confidence": 0.5011838989739542,
+        "lift": 5.6329913180741915
+      },
+      {
+        "module": "samtools",
+        "count": 635,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      }
+    ],
+    "pytorch": [
+      {
+        "module": "cuda",
+        "count": 634,
+        "confidence": 0.49803613511390415,
+        "lift": 5.606441476826395
+      },
+      {
+        "module": "python",
+        "count": 634,
+        "confidence": 0.32613168724279834,
+        "lift": 3.6712962962962963
+      }
+    ],
+    "bwa": [
+      {
+        "module": "samtools",
+        "count": 633,
+        "confidence": 1.0,
+        "lift": 2.2331038798498124
+      }
+    ],
+    "singularity": [
+      {
+        "module": "bcftools",
+        "count": 632,
+        "confidence": 0.4988161010260458,
+        "lift": 5.632991318074191
+      },
+      {
+        "module": "nextflow",
+        "count": 632,
+        "confidence": 0.4795144157814871,
+        "lift": 5.415022761760243
+      },
+      {
+        "module": "samtools",
+        "count": 632,
+        "confidence": 0.19774718397997496,
+        "lift": 2.233103879849812
+      }
+    ]
+  }
+}

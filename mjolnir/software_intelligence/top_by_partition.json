@@ -1,0 +1,244 @@
+{
+  "schema_version": "software-intelligence-v1",
+  "generated_at": "2026-06-30T21:01:13Z",
+  "collector": "software_intelligence_export",
+  "collector_status": "ok",
+  "platform_module": "Software Intelligence",
+  "failure_message": null,
+  "expected_refresh_seconds": 86400,
+  "warning_after_intervals": 2,
+  "critical_after_intervals": 3,
+  "top_by_partition": {
+    "cpuqueue": [
+      {
+        "module_name": "samtools",
+        "jobs": 1902,
+        "cpu_hours": 34583.12
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 800,
+        "cpu_hours": 14936.16
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 776,
+        "cpu_hours": 15491.4
+      },
+      {
+        "module_name": "star",
+        "jobs": 774,
+        "cpu_hours": 14640.46
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 760,
+        "cpu_hours": 14418.69
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 417,
+        "cpu_hours": 7886.23
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 394,
+        "cpu_hours": 6460.43
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 391,
+        "cpu_hours": 7590.53
+      },
+      {
+        "module_name": "python",
+        "jobs": 390,
+        "cpu_hours": 7999.94
+      },
+      {
+        "module_name": "r",
+        "jobs": 390,
+        "cpu_hours": 7999.94
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 385,
+        "cpu_hours": 7900.87
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 383,
+        "cpu_hours": 7070.08
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 375,
+        "cpu_hours": 6517.82
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 365,
+        "cpu_hours": 6654.07
+      }
+    ],
+    "gpuqueue": [
+      {
+        "module_name": "python",
+        "jobs": 1353,
+        "cpu_hours": 26070.76
+      },
+      {
+        "module_name": "cuda",
+        "jobs": 1273,
+        "cpu_hours": 24313.16
+      },
+      {
+        "module_name": "tensorflow",
+        "jobs": 639,
+        "cpu_hours": 12101.61
+      },
+      {
+        "module_name": "pytorch",
+        "jobs": 634,
+        "cpu_hours": 12211.55
+      },
+      {
+        "module_name": "samtools",
+        "jobs": 308,
+        "cpu_hours": 5187.97
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 135,
+        "cpu_hours": 2603.44
+      },
+      {
+        "module_name": "star",
+        "jobs": 124,
+        "cpu_hours": 2266.57
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 121,
+        "cpu_hours": 2203.57
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 120,
+        "cpu_hours": 1800.98
+      },
+      {
+        "module_name": "r",
+        "jobs": 80,
+        "cpu_hours": 1757.6
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 73,
+        "cpu_hours": 1448.61
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 70,
+        "cpu_hours": 1048.58
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 69,
+        "cpu_hours": 983.02
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 68,
+        "cpu_hours": 1297.29
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 66,
+        "cpu_hours": 1117.86
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 62,
+        "cpu_hours": 1154.83
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 59,
+        "cpu_hours": 1048.74
+      }
+    ],
+    "interactive": [
+      {
+        "module_name": "samtools",
+        "jobs": 986,
+        "cpu_hours": 18470.23
+      },
+      {
+        "module_name": "star",
+        "jobs": 414,
+        "cpu_hours": 7220.17
+      },
+      {
+        "module_name": "nextflow",
+        "jobs": 407,
+        "cpu_hours": 7666.23
+      },
+      {
+        "module_name": "bcftools",
+        "jobs": 386,
+        "cpu_hours": 7335.46
+      },
+      {
+        "module_name": "multiqc",
+        "jobs": 379,
+        "cpu_hours": 6893.18
+      },
+      {
+        "module_name": "apptainer",
+        "jobs": 222,
+        "cpu_hours": 3941.84
+      },
+      {
+        "module_name": "bowtie2",
+        "jobs": 206,
+        "cpu_hours": 3655.48
+      },
+      {
+        "module_name": "bwa",
+        "jobs": 202,
+        "cpu_hours": 4200.97
+      },
+      {
+        "module_name": "gatk",
+        "jobs": 201,
+        "cpu_hours": 3611.07
+      },
+      {
+        "module_name": "python",
+        "jobs": 201,
+        "cpu_hours": 3476.95
+      },
+      {
+        "module_name": "r",
+        "jobs": 201,
+        "cpu_hours": 3476.95
+      },
+      {
+        "module_name": "fastqc",
+        "jobs": 187,
+        "cpu_hours": 3614.85
+      },
+      {
+        "module_name": "qiime2",
+        "jobs": 187,
+        "cpu_hours": 3117.77
+      },
+      {
+        "module_name": "singularity",
+        "jobs": 185,
+        "cpu_hours": 3724.39
+      }
+    ]
+  }
+}

@@ -1,0 +1,733 @@
+{
+  "schema_version": "software-intelligence-v1",
+  "generated_at": "2026-06-30T21:01:13Z",
+  "collector": "software_intelligence_export",
+  "collector_status": "ok",
+  "platform_module": "Software Intelligence",
+  "failure_message": null,
+  "expected_refresh_seconds": 86400,
+  "warning_after_intervals": 2,
+  "critical_after_intervals": 3,
+  "top_by_account": {
+    "acct_720746b28a63": {
+      "account_label": "Account A004",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 417,
+          "cpu_hours": 7981.88
+        },
+        {
+          "module_name": "python",
+          "jobs": 235,
+          "cpu_hours": 4590.35
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 169,
+          "cpu_hours": 3604.89
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 164,
+          "cpu_hours": 3684.09
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 163,
+          "cpu_hours": 3267.48
+        },
+        {
+          "module_name": "star",
+          "jobs": 157,
+          "cpu_hours": 3339.99
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 156,
+          "cpu_hours": 3088.96
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 91,
+          "cpu_hours": 1514.96
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 87,
+          "cpu_hours": 1777.65
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 83,
+          "cpu_hours": 1567.57
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 82,
+          "cpu_hours": 1856.85
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 82,
+          "cpu_hours": 1378.89
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 82,
+          "cpu_hours": 1827.24
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 81,
+          "cpu_hours": 1605.81
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 80,
+          "cpu_hours": 1699.91
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 77,
+          "cpu_hours": 1389.67
+        },
+        {
+          "module_name": "r",
+          "jobs": 72,
+          "cpu_hours": 1322.88
+        }
+      ]
+    },
+    "acct_4ab1243a5088": {
+      "account_label": "Account A008",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 417,
+          "cpu_hours": 7692.7
+        },
+        {
+          "module_name": "python",
+          "jobs": 236,
+          "cpu_hours": 4025.06
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 171,
+          "cpu_hours": 3046.18
+        },
+        {
+          "module_name": "star",
+          "jobs": 163,
+          "cpu_hours": 2872.54
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 161,
+          "cpu_hours": 2656.95
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 160,
+          "cpu_hours": 3043.27
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 147,
+          "cpu_hours": 2269.27
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 91,
+          "cpu_hours": 1554.31
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 89,
+          "cpu_hours": 1489.7
+        },
+        {
+          "module_name": "r",
+          "jobs": 89,
+          "cpu_hours": 1755.78
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 88,
+          "cpu_hours": 1667.86
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 87,
+          "cpu_hours": 1545.67
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 83,
+          "cpu_hours": 1380.66
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 82,
+          "cpu_hours": 1766.98
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 78,
+          "cpu_hours": 1276.29
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 77,
+          "cpu_hours": 1342.45
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 70,
+          "cpu_hours": 926.82
+        }
+      ]
+    },
+    "acct_3f5de412c220": {
+      "account_label": "Account A001",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 413,
+          "cpu_hours": 7299.69
+        },
+        {
+          "module_name": "python",
+          "jobs": 245,
+          "cpu_hours": 4739.13
+        },
+        {
+          "module_name": "star",
+          "jobs": 177,
+          "cpu_hours": 3300.25
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 171,
+          "cpu_hours": 3399.89
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 169,
+          "cpu_hours": 2943.86
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 159,
+          "cpu_hours": 2830.62
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 159,
+          "cpu_hours": 3271.0
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 95,
+          "cpu_hours": 1621.12
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 92,
+          "cpu_hours": 1898.29
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 86,
+          "cpu_hours": 1359.79
+        },
+        {
+          "module_name": "r",
+          "jobs": 86,
+          "cpu_hours": 1468.13
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 84,
+          "cpu_hours": 1541.91
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 83,
+          "cpu_hours": 1861.4
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 80,
+          "cpu_hours": 1329.02
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 79,
+          "cpu_hours": 1501.6
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 76,
+          "cpu_hours": 1409.6
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 74,
+          "cpu_hours": 1445.99
+        }
+      ]
+    },
+    "acct_5e2a0992f442": {
+      "account_label": "Account A005",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 399,
+          "cpu_hours": 7106.92
+        },
+        {
+          "module_name": "python",
+          "jobs": 248,
+          "cpu_hours": 4801.2
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 183,
+          "cpu_hours": 3640.87
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 177,
+          "cpu_hours": 3050.19
+        },
+        {
+          "module_name": "star",
+          "jobs": 174,
+          "cpu_hours": 3316.91
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 164,
+          "cpu_hours": 2993.13
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 158,
+          "cpu_hours": 3226.54
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 97,
+          "cpu_hours": 1980.77
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 91,
+          "cpu_hours": 1390.1
+        },
+        {
+          "module_name": "r",
+          "jobs": 90,
+          "cpu_hours": 1574.66
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 87,
+          "cpu_hours": 1656.99
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 86,
+          "cpu_hours": 1660.1
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 84,
+          "cpu_hours": 1582.88
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 79,
+          "cpu_hours": 1664.21
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 79,
+          "cpu_hours": 1562.33
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 75,
+          "cpu_hours": 1238.33
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 70,
+          "cpu_hours": 1482.25
+        }
+      ]
+    },
+    "acct_49052d9def0a": {
+      "account_label": "Account A007",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 396,
+          "cpu_hours": 7787.13
+        },
+        {
+          "module_name": "python",
+          "jobs": 240,
+          "cpu_hours": 4301.51
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 167,
+          "cpu_hours": 3266.04
+        },
+        {
+          "module_name": "star",
+          "jobs": 166,
+          "cpu_hours": 3069.61
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 164,
+          "cpu_hours": 3439.36
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 162,
+          "cpu_hours": 2691.21
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 144,
+          "cpu_hours": 2937.69
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 98,
+          "cpu_hours": 1981.52
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 89,
+          "cpu_hours": 1731.47
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 88,
+          "cpu_hours": 1535.04
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 88,
+          "cpu_hours": 1246.58
+        },
+        {
+          "module_name": "r",
+          "jobs": 78,
+          "cpu_hours": 1610.3
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 76,
+          "cpu_hours": 1333.36
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 76,
+          "cpu_hours": 1904.32
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 74,
+          "cpu_hours": 1444.64
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 68,
+          "cpu_hours": 1033.37
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 66,
+          "cpu_hours": 1133.56
+        }
+      ]
+    },
+    "acct_efb38c57f296": {
+      "account_label": "Account A003",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 385,
+          "cpu_hours": 6859.67
+        },
+        {
+          "module_name": "python",
+          "jobs": 248,
+          "cpu_hours": 5416.34
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 173,
+          "cpu_hours": 3628.61
+        },
+        {
+          "module_name": "star",
+          "jobs": 167,
+          "cpu_hours": 3160.09
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 156,
+          "cpu_hours": 3115.95
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 155,
+          "cpu_hours": 3008.95
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 142,
+          "cpu_hours": 2494.07
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 88,
+          "cpu_hours": 2061.57
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 87,
+          "cpu_hours": 1575.39
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 85,
+          "cpu_hours": 1567.04
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 83,
+          "cpu_hours": 1367.17
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 80,
+          "cpu_hours": 1413.73
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 76,
+          "cpu_hours": 1531.25
+        },
+        {
+          "module_name": "r",
+          "jobs": 75,
+          "cpu_hours": 1787.73
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 74,
+          "cpu_hours": 1060.52
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 71,
+          "cpu_hours": 1149.96
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 68,
+          "cpu_hours": 1433.56
+        }
+      ]
+    },
+    "acct_dde11a42934f": {
+      "account_label": "Account A006",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 385,
+          "cpu_hours": 7057.8
+        },
+        {
+          "module_name": "python",
+          "jobs": 243,
+          "cpu_hours": 4794.38
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 182,
+          "cpu_hours": 3329.5
+        },
+        {
+          "module_name": "star",
+          "jobs": 173,
+          "cpu_hours": 2837.89
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 167,
+          "cpu_hours": 2877.55
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 162,
+          "cpu_hours": 3084.05
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 143,
+          "cpu_hours": 2839.76
+        },
+        {
+          "module_name": "r",
+          "jobs": 100,
+          "cpu_hours": 1954.62
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 98,
+          "cpu_hours": 1599.51
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 93,
+          "cpu_hours": 1816.82
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 92,
+          "cpu_hours": 1639.18
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 85,
+          "cpu_hours": 1670.76
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 84,
+          "cpu_hours": 1729.98
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 78,
+          "cpu_hours": 1354.07
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 75,
+          "cpu_hours": 1410.75
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 68,
+          "cpu_hours": 1429.0
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 63,
+          "cpu_hours": 1064.62
+        }
+      ]
+    },
+    "acct_f08cf98d90d6": {
+      "account_label": "Account A002",
+      "top_modules": [
+        {
+          "module_name": "samtools",
+          "jobs": 384,
+          "cpu_hours": 6455.51
+        },
+        {
+          "module_name": "python",
+          "jobs": 249,
+          "cpu_hours": 4879.69
+        },
+        {
+          "module_name": "cuda",
+          "jobs": 168,
+          "cpu_hours": 3119.3
+        },
+        {
+          "module_name": "bcftools",
+          "jobs": 154,
+          "cpu_hours": 2912.94
+        },
+        {
+          "module_name": "multiqc",
+          "jobs": 149,
+          "cpu_hours": 2298.65
+        },
+        {
+          "module_name": "nextflow",
+          "jobs": 138,
+          "cpu_hours": 2601.47
+        },
+        {
+          "module_name": "star",
+          "jobs": 135,
+          "cpu_hours": 2229.91
+        },
+        {
+          "module_name": "tensorflow",
+          "jobs": 90,
+          "cpu_hours": 1765.81
+        },
+        {
+          "module_name": "r",
+          "jobs": 81,
+          "cpu_hours": 1760.39
+        },
+        {
+          "module_name": "bowtie2",
+          "jobs": 79,
+          "cpu_hours": 882.53
+        },
+        {
+          "module_name": "singularity",
+          "jobs": 79,
+          "cpu_hours": 1447.01
+        },
+        {
+          "module_name": "pytorch",
+          "jobs": 78,
+          "cpu_hours": 1353.49
+        },
+        {
+          "module_name": "bwa",
+          "jobs": 75,
+          "cpu_hours": 1584.58
+        },
+        {
+          "module_name": "gatk",
+          "jobs": 75,
+          "cpu_hours": 1465.94
+        },
+        {
+          "module_name": "qiime2",
+          "jobs": 74,
+          "cpu_hours": 1506.79
+        },
+        {
+          "module_name": "fastqc",
+          "jobs": 73,
+          "cpu_hours": 1223.19
+        },
+        {
+          "module_name": "apptainer",
+          "jobs": 59,
+          "cpu_hours": 1154.46
+        }
+      ]
+    }
+  }
+}
