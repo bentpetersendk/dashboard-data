@@ -1,11 +1,11 @@
 {
   "schema_version": "analytics-v1",
-  "generated_at": "2026-06-29T22:36:50Z",
+  "generated_at": "2026-06-30T09:33:44Z",
   "collector": "analytics_export",
-  "collector_status": "ok",
+  "collector_status": "failed",
   "platform_module": "Analytics",
   "expected_refresh_seconds": 86400,
   "warning_after_intervals": 2,
   "critical_after_intervals": 3,
-  "failure_message": null
+  "failure_message": "validate_jobid_reuse.py detected JobID reuse for 2026-06-29 - see /tmp/claude-363160404/-maps-projects-mjolnir-admin-people-jsd606-mjolnir-analytics/3a6fbfd9-1939-4fd8-9c6e-f49c446ad51a/scratchpad/worktrees/mjolnir-analytics/reports/jobid_reuse/jobid_reuse_2026-06-29.md. Skipping materialize/export this cycle; import already happened safely."
 }
