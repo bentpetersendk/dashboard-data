@@ -1,8 +1,8 @@
 {
   "schema_version": "slurm-analytics-pipeline-v2",
-  "generated_at": "2026-06-30T21:13:43Z",
+  "generated_at": "2026-06-30T22:09:15Z",
   "collector": "slurm_analytics_pipeline",
-  "collector_status": "failed",
+  "collector_status": "ok",
   "platform_module": "Analytics Pipeline",
   "expected_refresh_seconds": 86400,
   "warning_after_intervals": 2,
@@ -10,7 +10,7 @@
   "data_window_days": 751,
   "warehouse": {
     "warehouse_version": "1.0",
-    "db_schema_version": 3,
+    "db_schema_version": 4,
     "total_jobs": 22115965,
     "total_accounting_records": 55123893,
     "total_job_steps": 32459067,
@@ -18,18 +18,18 @@
     "total_projects": 35,
     "total_accounts": 4,
     "total_partitions": 6,
-    "database_size_bytes": 42842030080,
+    "database_size_bytes": 43680755712,
     "earliest_date": "2024-06-10",
     "latest_date": "2026-06-30",
-    "last_import_at": "2026-06-30T21:09:09Z",
-    "last_import_duration_seconds": 1,
-    "last_materialization_at": "2026-06-30T21:04:11Z",
-    "last_materialization_duration_seconds": 77,
-    "last_publish_at": "2026-06-30T21:01:19Z",
+    "last_import_at": "2026-06-30T21:56:44Z",
+    "last_import_duration_seconds": 3,
+    "last_materialization_at": "2026-06-30T21:16:02Z",
+    "last_materialization_duration_seconds": 5,
+    "last_publish_at": "2026-06-30T22:04:16Z",
     "last_publish_status": "ok",
-    "last_publish_duration_seconds": 1056,
-    "last_success_at": "2026-06-29T23:33:32Z",
-    "last_failure_at": "2026-06-30T21:03:43Z",
+    "last_publish_duration_seconds": 369,
+    "last_success_at": "2026-06-30T21:43:17Z",
+    "last_failure_at": "2026-06-30T21:46:03Z",
     "overnight": {
       "new_accounting_records": 4419,
       "new_job_steps": 2137,
@@ -40,6 +40,5 @@
       "new_partitions": 0,
       "report_date": "2026-06-30"
     }
-  },
-  "failure_message": "validate_jobid_reuse.py detected JobID reuse for 2026-06-29 - see /projects/mjolnir_admin/people/jsd606/mjolnir-analytics-production/reports/jobid_reuse/jobid_reuse_2026-06-29.md. Skipping materialize/export this cycle; import already happened safely."
+  }
 }
