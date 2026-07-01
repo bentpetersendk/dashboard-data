@@ -1,6 +1,6 @@
 {
   "schema_version": "node-insights-v1",
-  "generated_at": "2026-07-01T02:00:28Z",
+  "generated_at": "2026-07-01T03:00:10Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -18,76 +18,72 @@
   "cluster_overview": {
     "totals": {
       "nodes_total": 20,
-      "nodes_available": 18,
-      "nodes_draining": 2,
+      "nodes_available": 17,
+      "nodes_draining": 3,
       "nodes_down": 0
     },
     "cpu": {
-      "alloc": 1800,
+      "alloc": 1710,
       "total": 2720,
-      "alloc_pct": 0.6618
+      "alloc_pct": 0.6287
     },
     "memory_mib": {
-      "alloc": 17054116,
+      "alloc": 15411620,
       "total": 23401892,
-      "alloc_pct": 0.7287
+      "alloc_pct": 0.6586
     },
     "gpu": {
-      "alloc": 10,
+      "alloc": 9,
       "total": 10,
-      "alloc_pct": 1.0,
-      "online_total": 10,
-      "alloc_pct_of_online": 1.0
+      "alloc_pct": 0.9,
+      "online_total": 6,
+      "alloc_pct_of_online": 1.5
     },
     "queue": {
-      "jobs_total": 336,
-      "running": 121,
-      "pending": 215,
+      "jobs_total": 331,
+      "running": 114,
+      "pending": 217,
       "by_partition": [
         {
           "partition": "cpuqueue",
-          "running": 111,
-          "pending": 113
+          "running": 105,
+          "pending": 114
         },
         {
           "partition": "gpuqueue",
-          "running": 10,
-          "pending": 102
+          "running": 9,
+          "pending": 103
         }
       ],
       "pending_reasons": [
         {
           "reason": "Priority",
-          "count": 155
+          "count": 157
         },
         {
           "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
-          "count": 52
+          "count": 53
         },
         {
           "reason": "JobArrayTaskLimit",
-          "count": 3
+          "count": 2
+        },
+        {
+          "reason": "Resources",
+          "count": 2
         },
         {
           "reason": "Dependency",
           "count": 2
         },
         {
-          "reason": "Resources",
-          "count": 1
-        },
-        {
           "reason": "QOSMaxCpuPerJobLimit",
-          "count": 1
-        },
-        {
-          "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
           "count": 1
         }
       ]
     },
     "maintenance": {
-      "nodes_draining": 2,
+      "nodes_draining": 3,
       "nodes": [
         {
           "node": "mjolnircomp08fl",
@@ -98,6 +94,11 @@
           "node": "mjolnircomp17fl",
           "reason": "maintenance",
           "since": "2026-06-23T09:28:36"
+        },
+        {
+          "node": "mjolnirgpu02fl",
+          "reason": "Kill task failed",
+          "since": "2026-07-01T04:45:43"
         }
       ]
     },
@@ -153,14 +154,14 @@
         "cpu_total": 96,
         "cpu_alloc": 92,
         "cpu_alloc_pct": 0.9583,
-        "cpu_load": 76.91,
+        "cpu_load": 80.22,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 710512,
-        "free_mem_mib": 242720,
+        "free_mem_mib": 235699,
         "mem_alloc_pct": 0.6939,
         "gpu_type": null,
         "gpu_total": 0,
@@ -179,7 +180,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-18T09:52:50",
+        "boot_time": "2026-06-18T09:52:51",
         "slurmd_start_time": "2026-06-18T09:53:11",
         "os": "Linux 4.18.0-553.134.1.el8_10.x86_64 #1 SMP Fri Jun 12 18:47:05 EDT 2026",
         "slurm_version": "20.11.9",
@@ -193,14 +194,14 @@
         "cpu_total": 96,
         "cpu_alloc": 94,
         "cpu_alloc_pct": 0.9792,
-        "cpu_load": 65.56,
+        "cpu_load": 56.43,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 1023568,
-        "free_mem_mib": 43007,
+        "free_mem_mib": 6951,
         "mem_alloc_pct": 0.9996,
         "gpu_type": null,
         "gpu_total": 0,
@@ -219,7 +220,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-12T15:35:16",
+        "boot_time": "2026-06-12T15:35:17",
         "slurmd_start_time": "2026-06-12T15:35:37",
         "os": "Linux 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Wed Jun 10 07:35:57 EDT 2026",
         "slurm_version": "20.11.9",
@@ -233,14 +234,14 @@
         "cpu_total": 96,
         "cpu_alloc": 86,
         "cpu_alloc_pct": 0.8958,
-        "cpu_load": 79.82,
+        "cpu_load": 75.2,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 634880,
-        "free_mem_mib": 564152,
+        "free_mem_mib": 557187,
         "mem_alloc_pct": 0.62,
         "gpu_type": null,
         "gpu_total": 0,
@@ -259,7 +260,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-29T09:53:33",
+        "boot_time": "2026-06-29T09:53:34",
         "slurmd_start_time": "2026-06-29T09:53:54",
         "os": "Linux 4.18.0-553.136.1.el8_10.x86_64 #1 SMP Thu Jun 18 14:53:04 EDT 2026",
         "slurm_version": "20.11.9",
@@ -273,14 +274,14 @@
         "cpu_total": 96,
         "cpu_alloc": 86,
         "cpu_alloc_pct": 0.8958,
-        "cpu_load": 45.48,
+        "cpu_load": 75.33,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 716800,
-        "free_mem_mib": 468754,
+        "free_mem_mib": 461785,
         "mem_alloc_pct": 0.7,
         "gpu_type": null,
         "gpu_total": 0,
@@ -299,7 +300,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-18T09:52:44",
+        "boot_time": "2026-06-18T09:52:45",
         "slurmd_start_time": "2026-06-18T09:53:05",
         "os": "Linux 4.18.0-553.134.1.el8_10.x86_64 #1 SMP Fri Jun 12 18:47:05 EDT 2026",
         "slurm_version": "20.11.9",
@@ -313,14 +314,14 @@
         "cpu_total": 128,
         "cpu_alloc": 108,
         "cpu_alloc_pct": 0.8438,
-        "cpu_load": 89.31,
+        "cpu_load": 115.58,
         "sockets": 2,
         "cores_per_socket": 32,
         "threads_per_core": 2,
         "physical_cores": 64,
         "real_memory_mib": 512000,
         "alloc_mem_mib": 495616,
-        "free_mem_mib": 274303,
+        "free_mem_mib": 265778,
         "mem_alloc_pct": 0.968,
         "gpu_type": null,
         "gpu_total": 0,
@@ -353,14 +354,14 @@
         "cpu_total": 128,
         "cpu_alloc": 110,
         "cpu_alloc_pct": 0.8594,
-        "cpu_load": 94.36,
+        "cpu_load": 112.81,
         "sockets": 2,
         "cores_per_socket": 32,
         "threads_per_core": 2,
         "physical_cores": 64,
         "real_memory_mib": 453087,
         "alloc_mem_mib": 380928,
-        "free_mem_mib": 190262,
+        "free_mem_mib": 192251,
         "mem_alloc_pct": 0.8407,
         "gpu_type": null,
         "gpu_total": 0,
@@ -393,14 +394,14 @@
         "cpu_total": 64,
         "cpu_alloc": 62,
         "cpu_alloc_pct": 0.9688,
-        "cpu_load": 38.26,
+        "cpu_load": 38.12,
         "sockets": 2,
         "cores_per_socket": 16,
         "threads_per_core": 2,
         "physical_cores": 32,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 984656,
-        "free_mem_mib": 378843,
+        "free_mem_mib": 373775,
         "mem_alloc_pct": 0.9616,
         "gpu_type": null,
         "gpu_total": 0,
@@ -419,7 +420,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-25T09:03:49",
+        "boot_time": "2026-06-25T09:03:50",
         "slurmd_start_time": "2026-06-25T09:15:47",
         "os": "Linux 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026",
         "slurm_version": "20.11.9",
@@ -433,14 +434,14 @@
         "cpu_total": 96,
         "cpu_alloc": 48,
         "cpu_alloc_pct": 0.5,
-        "cpu_load": 53.17,
+        "cpu_load": 38.32,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 2048000,
         "alloc_mem_mib": 172032,
-        "free_mem_mib": 1770062,
+        "free_mem_mib": 1774394,
         "mem_alloc_pct": 0.084,
         "gpu_type": null,
         "gpu_total": 0,
@@ -459,7 +460,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-22T15:04:13",
+        "boot_time": "2026-06-22T15:04:14",
         "slurmd_start_time": "2026-06-23T09:29:03",
         "os": "Linux 4.18.0-553.136.1.el8_10.x86_64 #1 SMP Thu Jun 18 14:53:04 EDT 2026",
         "slurm_version": "20.11.9",
@@ -473,14 +474,14 @@
         "cpu_total": 96,
         "cpu_alloc": 80,
         "cpu_alloc_pct": 0.8333,
-        "cpu_load": 54.7,
+        "cpu_load": 60.98,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 2048000,
         "alloc_mem_mib": 1423360,
-        "free_mem_mib": 1018311,
+        "free_mem_mib": 927157,
         "mem_alloc_pct": 0.695,
         "gpu_type": null,
         "gpu_total": 0,
@@ -511,24 +512,24 @@
         "class_label": "Standard Compute",
         "arch": "x86_64",
         "cpu_total": 96,
-        "cpu_alloc": 96,
-        "cpu_alloc_pct": 1.0,
-        "cpu_load": 61.12,
+        "cpu_alloc": 86,
+        "cpu_alloc_pct": 0.8958,
+        "cpu_load": 68.61,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
-        "alloc_mem_mib": 507968,
-        "free_mem_mib": 9405,
-        "mem_alloc_pct": 0.4961,
+        "alloc_mem_mib": 357968,
+        "free_mem_mib": 8013,
+        "mem_alloc_pct": 0.3496,
         "gpu_type": null,
         "gpu_total": 0,
         "gpu_alloc": 0,
         "gpu_alloc_pct": null,
         "gpu_indexes_allocated": null,
-        "state": "ALLOCATED",
-        "state_base": "ALLOCATED",
+        "state": "MIXED",
+        "state_base": "MIXED",
         "drain": false,
         "down": false,
         "drain_reason": null,
@@ -539,11 +540,11 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-15T12:24:31",
+        "boot_time": "2026-06-15T12:24:32",
         "slurmd_start_time": "2026-06-15T12:24:55",
         "os": "Linux 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Wed Jun 10 07:35:57 EDT 2026",
         "slurm_version": "20.11.9",
-        "running_jobs_count": 8
+        "running_jobs_count": 7
       },
       {
         "node": "mjolnircomp11fl",
@@ -551,17 +552,17 @@
         "class_label": "Standard Compute",
         "arch": "x86_64",
         "cpu_total": 96,
-        "cpu_alloc": 94,
-        "cpu_alloc_pct": 0.9792,
-        "cpu_load": 72.76,
+        "cpu_alloc": 74,
+        "cpu_alloc_pct": 0.7708,
+        "cpu_load": 55.32,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
-        "alloc_mem_mib": 632400,
-        "free_mem_mib": 150699,
-        "mem_alloc_pct": 0.6176,
+        "alloc_mem_mib": 530000,
+        "free_mem_mib": 157683,
+        "mem_alloc_pct": 0.5176,
         "gpu_type": null,
         "gpu_total": 0,
         "gpu_alloc": 0,
@@ -583,7 +584,7 @@
         "slurmd_start_time": "2026-06-12T15:34:14",
         "os": "Linux 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Wed Jun 10 07:35:57 EDT 2026",
         "slurm_version": "20.11.9",
-        "running_jobs_count": 8
+        "running_jobs_count": 7
       },
       {
         "node": "mjolnircomp12fl",
@@ -593,14 +594,14 @@
         "cpu_total": 96,
         "cpu_alloc": 90,
         "cpu_alloc_pct": 0.9375,
-        "cpu_load": 87.06,
+        "cpu_load": 68.31,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 724800,
-        "free_mem_mib": 446485,
+        "free_mem_mib": 551261,
         "mem_alloc_pct": 0.7078,
         "gpu_type": null,
         "gpu_total": 0,
@@ -631,17 +632,17 @@
         "class_label": "Standard Compute",
         "arch": "x86_64",
         "cpu_total": 96,
-        "cpu_alloc": 82,
-        "cpu_alloc_pct": 0.8542,
-        "cpu_load": 70.78,
+        "cpu_alloc": 92,
+        "cpu_alloc_pct": 0.9583,
+        "cpu_load": 75.03,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
-        "alloc_mem_mib": 872448,
-        "free_mem_mib": 425462,
-        "mem_alloc_pct": 0.852,
+        "alloc_mem_mib": 942080,
+        "free_mem_mib": 443245,
+        "mem_alloc_pct": 0.92,
         "gpu_type": null,
         "gpu_total": 0,
         "gpu_alloc": 0,
@@ -659,7 +660,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-25T09:03:52",
+        "boot_time": "2026-06-25T09:03:53",
         "slurmd_start_time": "2026-06-25T09:04:11",
         "os": "Linux 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026",
         "slurm_version": "20.11.9",
@@ -673,14 +674,14 @@
         "cpu_total": 96,
         "cpu_alloc": 92,
         "cpu_alloc_pct": 0.9583,
-        "cpu_load": 64.95,
+        "cpu_load": 55.32,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 964608,
-        "free_mem_mib": 9134,
+        "free_mem_mib": 146213,
         "mem_alloc_pct": 0.942,
         "gpu_type": null,
         "gpu_total": 0,
@@ -699,7 +700,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-25T09:04:16",
+        "boot_time": "2026-06-25T09:04:17",
         "slurmd_start_time": "2026-06-25T09:04:35",
         "os": "Linux 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026",
         "slurm_version": "20.11.9",
@@ -713,14 +714,14 @@
         "cpu_total": 96,
         "cpu_alloc": 88,
         "cpu_alloc_pct": 0.9167,
-        "cpu_load": 61.92,
+        "cpu_load": 61.97,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 945600,
-        "free_mem_mib": 4717,
+        "free_mem_mib": 3761,
         "mem_alloc_pct": 0.9234,
         "gpu_type": null,
         "gpu_total": 0,
@@ -738,7 +739,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-06-18T09:52:51",
+        "boot_time": "2026-06-18T09:52:52",
         "slurmd_start_time": "2026-06-18T09:53:10",
         "os": "Linux 4.18.0-553.134.1.el8_10.x86_64 #1 SMP Fri Jun 12 18:47:05 EDT 2026",
         "slurm_version": "20.11.9",
@@ -750,24 +751,24 @@
         "class_label": "Standard Compute",
         "arch": "x86_64",
         "cpu_total": 96,
-        "cpu_alloc": 88,
-        "cpu_alloc_pct": 0.9167,
-        "cpu_load": 81.68,
+        "cpu_alloc": 96,
+        "cpu_alloc_pct": 1.0,
+        "cpu_load": 63.48,
         "sockets": 2,
         "cores_per_socket": 24,
         "threads_per_core": 2,
         "physical_cores": 48,
         "real_memory_mib": 1024000,
-        "alloc_mem_mib": 1024000,
-        "free_mem_mib": 412843,
-        "mem_alloc_pct": 1.0,
+        "alloc_mem_mib": 870400,
+        "free_mem_mib": 202408,
+        "mem_alloc_pct": 0.85,
         "gpu_type": null,
         "gpu_total": 0,
         "gpu_alloc": 0,
         "gpu_alloc_pct": null,
         "gpu_indexes_allocated": null,
-        "state": "MIXED",
-        "state_base": "MIXED",
+        "state": "ALLOCATED",
+        "state_base": "ALLOCATED",
         "drain": false,
         "down": false,
         "drain_reason": null,
@@ -782,7 +783,7 @@
         "slurmd_start_time": "2026-06-25T09:04:21",
         "os": "Linux 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026",
         "slurm_version": "20.11.9",
-        "running_jobs_count": 4
+        "running_jobs_count": 5
       },
       {
         "node": "mjolnircomp17fl",
@@ -792,14 +793,14 @@
         "cpu_total": 512,
         "cpu_alloc": 40,
         "cpu_alloc_pct": 0.0781,
-        "cpu_load": 42.41,
+        "cpu_load": 41.89,
         "sockets": 2,
         "cores_per_socket": 128,
         "threads_per_core": 2,
         "physical_cores": 256,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 81920,
-        "free_mem_mib": 857429,
+        "free_mem_mib": 858016,
         "mem_alloc_pct": 0.08,
         "gpu_type": null,
         "gpu_total": 0,
@@ -817,7 +818,7 @@
           "lazyqueue"
         ],
         "weight": 1,
-        "boot_time": "2026-05-29T11:51:15",
+        "boot_time": "2026-05-29T11:51:16",
         "slurmd_start_time": "2026-05-29T11:51:37",
         "os": "Linux 4.18.0-553.52.1.el8_10.x86_64 #1 SMP Mon May 5 10:03:48 EDT 2025",
         "slurm_version": "20.11.9",
@@ -831,14 +832,14 @@
         "cpu_total": 128,
         "cpu_alloc": 126,
         "cpu_alloc_pct": 0.9844,
-        "cpu_load": 105.43,
+        "cpu_load": 99.73,
         "sockets": 2,
         "cores_per_socket": 32,
         "threads_per_core": 2,
         "physical_cores": 64,
         "real_memory_mib": 1024000,
         "alloc_mem_mib": 984460,
-        "free_mem_mib": 515944,
+        "free_mem_mib": 508892,
         "mem_alloc_pct": 0.9614,
         "gpu_type": "a100",
         "gpu_total": 2,
@@ -869,28 +870,28 @@
         "class_label": "GPU",
         "arch": "x86_64",
         "cpu_total": 256,
-        "cpu_alloc": 50,
-        "cpu_alloc_pct": 0.1953,
-        "cpu_load": 45.19,
+        "cpu_alloc": 32,
+        "cpu_alloc_pct": 0.125,
+        "cpu_load": 37.05,
         "sockets": 2,
         "cores_per_socket": 64,
         "threads_per_core": 2,
         "physical_cores": 128,
         "real_memory_mib": 2002400,
-        "alloc_mem_mib": 1796052,
-        "free_mem_mib": 1434252,
-        "mem_alloc_pct": 0.8969,
+        "alloc_mem_mib": 541124,
+        "free_mem_mib": 1951901,
+        "mem_alloc_pct": 0.2702,
         "gpu_type": "a100",
         "gpu_total": 4,
-        "gpu_alloc": 4,
-        "gpu_alloc_pct": 1.0,
-        "gpu_indexes_allocated": "0-3",
-        "state": "MIXED",
+        "gpu_alloc": 3,
+        "gpu_alloc_pct": 0.75,
+        "gpu_indexes_allocated": "0-2",
+        "state": "MIXED+DRAIN",
         "state_base": "MIXED",
-        "drain": false,
+        "drain": true,
         "down": false,
-        "drain_reason": null,
-        "drain_since": null,
+        "drain_reason": "Kill task failed",
+        "drain_since": "2026-07-01T04:45:43",
         "partitions": [
           "cpuqueue",
           "gpuqueue",
@@ -901,7 +902,7 @@
         "slurmd_start_time": "2026-06-18T10:07:09",
         "os": "Linux 4.18.0-553.134.1.el8_10.x86_64 #1 SMP Fri Jun 12 18:47:05 EDT 2026",
         "slurm_version": "20.11.9",
-        "running_jobs_count": 6
+        "running_jobs_count": 4
       },
       {
         "node": "mjolnirgpu03fl",
@@ -909,17 +910,17 @@
         "class_label": "GPU",
         "arch": "x86_64",
         "cpu_total": 256,
-        "cpu_alloc": 188,
-        "cpu_alloc_pct": 0.7344,
-        "cpu_load": 150.31,
+        "cpu_alloc": 128,
+        "cpu_alloc_pct": 0.5,
+        "cpu_load": 60.39,
         "sockets": 2,
         "cores_per_socket": 64,
         "threads_per_core": 2,
         "physical_cores": 128,
         "real_memory_mib": 2002400,
-        "alloc_mem_mib": 1977504,
-        "free_mem_mib": 95913,
-        "mem_alloc_pct": 0.9876,
+        "alloc_mem_mib": 1926304,
+        "free_mem_mib": 499486,
+        "mem_alloc_pct": 0.962,
         "gpu_type": "a100",
         "gpu_total": 4,
         "gpu_alloc": 4,
@@ -941,7 +942,7 @@
         "slurmd_start_time": "2026-06-29T14:00:31",
         "os": "Linux 4.18.0-553.137.1.el8_10.x86_64 #1 SMP Fri Jun 19 18:53:55 EDT 2026",
         "slurm_version": "20.11.9",
-        "running_jobs_count": 16
+        "running_jobs_count": 12
       }
     ]
   },
@@ -1106,66 +1107,62 @@
     },
     "pressure": {
       "cpu": {
-        "alloc_pct": 0.6618,
-        "alloc": 1800,
+        "alloc_pct": 0.6287,
+        "alloc": 1710,
         "total": 2720,
         "reading": "good"
       },
       "memory": {
-        "alloc_pct": 0.7287,
-        "alloc": 17054116,
+        "alloc_pct": 0.6586,
+        "alloc": 15411620,
         "total": 23401892,
-        "reading": "warn"
+        "reading": "good"
       },
       "gpu": {
-        "alloc_pct": 1.0,
-        "alloc_pct_of_online": 1.0,
-        "alloc": 10,
+        "alloc_pct": 0.9,
+        "alloc_pct_of_online": 1.5,
+        "alloc": 9,
         "total": 10,
-        "online_total": 10,
+        "online_total": 6,
         "reading": "bad"
       }
     },
     "queue_pressure": {
-      "pending_total": 215,
+      "pending_total": 217,
       "pending_reasons": [
         {
           "reason": "Priority",
-          "count": 155
+          "count": 157
         },
         {
           "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
-          "count": 52
+          "count": 53
         },
         {
           "reason": "JobArrayTaskLimit",
-          "count": 3
+          "count": 2
+        },
+        {
+          "reason": "Resources",
+          "count": 2
         },
         {
           "reason": "Dependency",
           "count": 2
         },
         {
-          "reason": "Resources",
-          "count": 1
-        },
-        {
           "reason": "QOSMaxCpuPerJobLimit",
-          "count": 1
-        },
-        {
-          "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
           "count": 1
         }
       ]
     },
     "maintenance_exposure": {
-      "nodes_draining": 2,
-      "nodes_draining_pct": 0.1,
-      "cpu_removed": 608,
-      "cpu_removed_pct": 0.2235,
-      "gpu_removed": 0,
-      "gpu_removed_pct": 0.0
+      "nodes_draining": 3,
+      "nodes_draining_pct": 0.15,
+      "cpu_removed": 864,
+      "cpu_removed_pct": 0.3176,
+      "gpu_removed": 4,
+      "gpu_removed_pct": 0.4
     }
   }
 }
