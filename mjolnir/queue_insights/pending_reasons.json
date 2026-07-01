@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-01T11:00:35Z",
+  "generated_at": "2026-07-01T12:00:34Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -4525,6 +4525,36 @@
       "timestamp": "2026-07-01T11:00:33Z",
       "reason": "QOSMaxCpuPerJobLimit",
       "count": 1
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "Priority",
+      "count": 169
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
+      "count": 42
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "JobArrayTaskLimit",
+      "count": 3
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
+      "count": 2
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "Resources",
+      "count": 2
+    },
+    {
+      "timestamp": "2026-07-01T12:00:32Z",
+      "reason": "Dependency",
+      "count": 2
     }
   ]
 }
