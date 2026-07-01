@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-06-30T23:00:35Z",
+  "generated_at": "2026-07-01T00:00:18Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -4144,6 +4144,36 @@
     {
       "timestamp": "2026-06-30T23:00:29Z",
       "reason": "QOSMaxCpuPerJobLimit",
+      "count": 1
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "Priority",
+      "count": 150
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
+      "count": 52
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "JobArrayTaskLimit",
+      "count": 3
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "Dependency",
+      "count": 2
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "Resources",
+      "count": 1
+    },
+    {
+      "timestamp": "2026-07-01T00:00:11Z",
+      "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
       "count": 1
     }
   ]
