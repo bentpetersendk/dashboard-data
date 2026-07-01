@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-01T00:00:18Z",
+  "generated_at": "2026-07-01T01:00:12Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -9,14 +9,14 @@
   "warning_after_intervals": 2,
   "critical_after_intervals": 4,
   "queue": {
-    "running": 128,
-    "pending": 209
+    "running": 117,
+    "pending": 213
   },
   "by_partition": [
     {
       "partition": "cpuqueue",
-      "running": 118,
-      "pending": 107
+      "running": 107,
+      "pending": 111
     },
     {
       "partition": "gpuqueue",
@@ -27,7 +27,7 @@
   "pending_reasons": [
     {
       "reason": "Priority",
-      "count": 150
+      "count": 153
     },
     {
       "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
@@ -46,17 +46,21 @@
       "count": 1
     },
     {
+      "reason": "QOSMaxCpuPerJobLimit",
+      "count": 1
+    },
+    {
       "reason": "Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions",
       "count": 1
     }
   ],
   "queue_health": {
-    "score": 50.1,
+    "score": 50.8,
     "label": "Congested",
     "components": {
-      "pending_ratio": 13.1,
-      "cpu_pressure": 24.2,
-      "worst_partition_concentration": 12.8
+      "pending_ratio": 14.6,
+      "cpu_pressure": 23.2,
+      "worst_partition_concentration": 13.0
     }
   }
 }
