@@ -1,6 +1,6 @@
 {
   "schema_version": "slurm-analytics-pipeline-v2",
-  "generated_at": "2026-07-01T00:00:00Z",
+  "generated_at": "2026-07-01T00:35:52Z",
   "collector": "slurm_analytics_pipeline",
   "collector_status": "failed",
   "platform_module": "Analytics Pipeline",
@@ -12,8 +12,8 @@
     "warehouse_version": "1.0",
     "db_schema_version": 3,
     "total_jobs": 22115965,
-    "total_accounting_records": 55123893,
-    "total_job_steps": 32459067,
+    "total_accounting_records": 55128896,
+    "total_job_steps": 32461488,
     "total_users": 306,
     "total_projects": 35,
     "total_accounts": 4,
@@ -21,18 +21,18 @@
     "database_size_bytes": 43680755712,
     "earliest_date": "2024-06-10",
     "latest_date": "2026-06-30",
-    "last_import_at": "2026-06-30T23:48:25Z",
-    "last_import_duration_seconds": 0,
+    "last_import_at": "2026-07-01T00:24:06Z",
+    "last_import_duration_seconds": 2,
     "last_materialization_at": "2026-06-30T21:16:02Z",
     "last_materialization_duration_seconds": 5,
-    "last_publish_at": "2026-06-30T23:39:23Z",
+    "last_publish_at": "2026-07-01T00:14:58Z",
     "last_publish_status": "ok",
-    "last_publish_duration_seconds": 662,
+    "last_publish_duration_seconds": 641,
     "last_success_at": "2026-06-30T22:31:54Z",
-    "last_failure_at": "2026-06-30T23:43:24Z",
+    "last_failure_at": "2026-07-01T00:19:03Z",
     "overnight": {
-      "new_accounting_records": 4419,
-      "new_job_steps": 2137,
+      "new_accounting_records": 5003,
+      "new_job_steps": 2421,
       "new_canonical_jobs": 55,
       "new_users": 0,
       "new_projects": 0,
@@ -41,5 +41,5 @@
       "report_date": "2026-06-30"
     }
   },
-  "failure_message": "validate_jobid_reuse.py detected JobID reuse for 2026-06-29 - see /projects/mjolnir_admin/people/jsd606/mjolnir-analytics-production/reports/jobid_reuse/jobid_reuse_2026-06-29.md. Skipping materialize/export this cycle; import already happened safely."
+  "failure_message": "validate_jobid_reuse.py detected JobID reuse for 2026-06-30 - see /projects/mjolnir_admin/people/jsd606/mjolnir-analytics-production/reports/jobid_reuse/jobid_reuse_2026-06-30.md. Skipping materialize/export this cycle; import already happened safely."
 }
