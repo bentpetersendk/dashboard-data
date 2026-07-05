@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-05T14:00:36Z",
+  "generated_at": "2026-07-05T15:00:36Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -9,25 +9,25 @@
   "warning_after_intervals": 2,
   "critical_after_intervals": 4,
   "queue": {
-    "running": 155,
-    "pending": 220
+    "running": 154,
+    "pending": 228
   },
   "by_partition": [
     {
       "partition": "cpuqueue",
       "running": 146,
-      "pending": 219
+      "pending": 227
     },
     {
       "partition": "gpuqueue",
-      "running": 9,
+      "running": 8,
       "pending": 1
     }
   ],
   "pending_reasons": [
     {
       "reason": "Priority",
-      "count": 206
+      "count": 214
     },
     {
       "reason": "ReqNodeNotAvail, UnavailableNodes:mjolnircomp08fl,mjolnircomp17fl,mjolnirgpu01fl,mjolnirgpu02fl,mjolnirgpu03fl",
@@ -51,11 +51,11 @@
     }
   ],
   "queue_health": {
-    "score": 63.9,
+    "score": 63.8,
     "label": "Congested",
     "components": {
-      "pending_ratio": 11.4,
-      "cpu_pressure": 27.6,
+      "pending_ratio": 11.8,
+      "cpu_pressure": 27.1,
       "worst_partition_concentration": 24.9
     }
   }
