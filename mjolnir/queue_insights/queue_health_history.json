@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-06T04:00:41Z",
+  "generated_at": "2026-07-06T05:00:41Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -2918,6 +2918,16 @@
       "components": {
         "pending_ratio": 14.2,
         "cpu_pressure": 24.4,
+        "worst_partition_concentration": 25.0
+      }
+    },
+    {
+      "timestamp": "2026-07-06T05:00:33Z",
+      "score": 62.3,
+      "label": "Congested",
+      "components": {
+        "pending_ratio": 12.8,
+        "cpu_pressure": 24.5,
         "worst_partition_concentration": 25.0
       }
     }
