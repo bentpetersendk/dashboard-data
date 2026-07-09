@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-09T12:00:24Z",
+  "generated_at": "2026-07-09T13:00:12Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -9,25 +9,25 @@
   "warning_after_intervals": 2,
   "critical_after_intervals": 4,
   "queue": {
-    "running": 131,
-    "pending": 459
+    "running": 151,
+    "pending": 457
   },
   "by_partition": [
     {
       "partition": "cpuqueue",
-      "running": 129,
-      "pending": 458
+      "running": 150,
+      "pending": 456
     },
     {
       "partition": "filetransfer",
-      "running": 2,
+      "running": 1,
       "pending": 1
     }
   ],
   "pending_reasons": [
     {
       "reason": "Priority",
-      "count": 453
+      "count": 451
     },
     {
       "reason": "JobArrayTaskLimit",
@@ -46,8 +46,8 @@
     "score": 68.9,
     "label": "Congested",
     "components": {
-      "pending_ratio": 28.0,
-      "cpu_pressure": 15.9,
+      "pending_ratio": 24.2,
+      "cpu_pressure": 19.7,
       "worst_partition_concentration": 24.9
     }
   }
