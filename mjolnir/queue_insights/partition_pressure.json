@@ -1,6 +1,6 @@
 {
   "schema_version": "queue-insights-live-v1",
-  "generated_at": "2026-07-09T09:00:16Z",
+  "generated_at": "2026-07-09T10:00:38Z",
   "source": "sqlite:node_insights",
   "collector": "node_insights",
   "collector_status": null,
@@ -3368,6 +3368,18 @@
     {
       "timestamp": "2026-07-09T09:00:09Z",
       "partition": "gpuqueue",
+      "running": 1,
+      "pending": 0
+    },
+    {
+      "timestamp": "2026-07-09T10:00:31Z",
+      "partition": "cpuqueue",
+      "running": 136,
+      "pending": 466
+    },
+    {
+      "timestamp": "2026-07-09T10:00:31Z",
+      "partition": "filetransfer",
       "running": 1,
       "pending": 0
     }
