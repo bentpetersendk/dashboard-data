@@ -53,7 +53,7 @@ jobs:
         with:
           repository: ${{ env.BIOHPC_STATS_SOURCE_REPOSITORY }}
           path: BioHPC_Website
-          token: ${{ secrets.BIOHPC_WEBSITE_TOKEN || github.token }}
+          ssh-key: ${{ secrets.BIOHPC_WEBSITE_DEPLOY_KEY }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
