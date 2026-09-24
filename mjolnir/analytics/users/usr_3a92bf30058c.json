@@ -1,10 +1,10 @@
 {
   "schema_version": "analytics-v1",
-  "generated_at": "2026-09-23T22:25:25Z",
+  "generated_at": "2026-09-24T22:24:54Z",
   "all_time_summary": {
-    "jobs": 1682,
+    "jobs": 1683,
     "completed_jobs": 1071,
-    "failed_jobs": 611,
+    "failed_jobs": 612,
     "cpu_hours_allocated": 283147.415556,
     "measured_cpu_hours": 58477.995,
     "avg_cpu_efficiency": 0.655243,
@@ -43,9 +43,9 @@
   },
   "rolling_summaries": {
     "7d": {
-      "jobs": 2,
+      "jobs": 3,
       "completed_jobs": 1,
-      "failed_jobs": 1,
+      "failed_jobs": 2,
       "cpu_hours_allocated": 1611.45,
       "measured_cpu_hours": 115.6625,
       "avg_cpu_efficiency": 0.337307,
@@ -83,9 +83,9 @@
       ]
     },
     "30d": {
-      "jobs": 207,
+      "jobs": 208,
       "completed_jobs": 169,
-      "failed_jobs": 38,
+      "failed_jobs": 39,
       "cpu_hours_allocated": 45754.241667,
       "measured_cpu_hours": 21399.744444,
       "avg_cpu_efficiency": 0.526603,
@@ -123,9 +123,9 @@
       ]
     },
     "90d": {
-      "jobs": 271,
+      "jobs": 272,
       "completed_jobs": 198,
-      "failed_jobs": 73,
+      "failed_jobs": 74,
       "cpu_hours_allocated": 50711.558611,
       "measured_cpu_hours": 24608.315833,
       "avg_cpu_efficiency": 0.524758,
@@ -163,9 +163,9 @@
       ]
     },
     "180d": {
-      "jobs": 797,
+      "jobs": 798,
       "completed_jobs": 617,
-      "failed_jobs": 180,
+      "failed_jobs": 181,
       "cpu_hours_allocated": 51478.625,
       "measured_cpu_hours": 25093.791111,
       "avg_cpu_efficiency": 0.658454,
@@ -1958,6 +1958,21 @@
       "measured_cpu_hours": 0.0,
       "requested_mem_gb_hours": 5760.0,
       "measured_mem_gb_max_sum": 6.21697998046875
+    },
+    {
+      "report_date": "2026-09-23",
+      "avg_cpu_efficiency": null,
+      "avg_memory_efficiency": null,
+      "estimated_cost_dkk": 0.0,
+      "underutilized_cost_dkk": 0.0,
+      "gpu_hours": 0.0,
+      "jobs": 1,
+      "jobs_with_measured_cpu": 0,
+      "jobs_with_measured_memory": 0,
+      "cpu_hours_allocated": 0.0,
+      "measured_cpu_hours": 0.0,
+      "requested_mem_gb_hours": 0.0,
+      "measured_mem_gb_max_sum": 0.0
     }
   ],
   "recommendations": [],
@@ -2176,8 +2191,8 @@
     "confidence": "low",
     "measurement_coverage": {
       "jobs_measured": 705,
-      "jobs_excluded": 92,
-      "jobs_measured_pct": 88.46,
+      "jobs_excluded": 93,
+      "jobs_measured_pct": 88.35,
       "cpu_hours_measured_pct": 48.75,
       "memory_measured_pct": 4.14
     },
