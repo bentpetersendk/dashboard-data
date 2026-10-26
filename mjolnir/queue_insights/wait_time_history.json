@@ -1,59 +1,11 @@
 {
   "schema_version": "queue-insights-v1",
-  "generated_at": "2026-10-24T23:15:23Z",
+  "generated_at": "2026-10-26T00:25:10Z",
   "expected_refresh_seconds": 86400,
   "warning_after_intervals": 2,
   "critical_after_intervals": 3,
   "data_window_days": 90,
   "series": [
-    {
-      "report_date": "2026-07-26",
-      "partition_name": "cpuqueue",
-      "jobs": 862,
-      "jobs_with_wait_time": 862,
-      "avg_wait_seconds": 8440.062645011601,
-      "median_wait_seconds": 7495.0,
-      "p90_wait_seconds": 17871.0,
-      "p99_wait_seconds": 19349.0,
-      "max_wait_seconds": 19488.0,
-      "avg_runtime_seconds": 4114.845707656613
-    },
-    {
-      "report_date": "2026-07-26",
-      "partition_name": "gpuqueue",
-      "jobs": 3,
-      "jobs_with_wait_time": 3,
-      "avg_wait_seconds": 3.6666666666666665,
-      "median_wait_seconds": 0.0,
-      "p90_wait_seconds": 11.0,
-      "p99_wait_seconds": 11.0,
-      "max_wait_seconds": 11.0,
-      "avg_runtime_seconds": 9302.666666666666
-    },
-    {
-      "report_date": "2026-07-27",
-      "partition_name": "cpuqueue",
-      "jobs": 2624,
-      "jobs_with_wait_time": 2624,
-      "avg_wait_seconds": 12250.28506097561,
-      "median_wait_seconds": 7416.0,
-      "p90_wait_seconds": 32128.0,
-      "p99_wait_seconds": 39215.0,
-      "max_wait_seconds": 40594.0,
-      "avg_runtime_seconds": 2682.5415396341464
-    },
-    {
-      "report_date": "2026-07-27",
-      "partition_name": "gpuqueue",
-      "jobs": 13,
-      "jobs_with_wait_time": 13,
-      "avg_wait_seconds": 6290.153846153846,
-      "median_wait_seconds": 3906.0,
-      "p90_wait_seconds": 12653.0,
-      "p99_wait_seconds": 12657.0,
-      "max_wait_seconds": 12657.0,
-      "avg_runtime_seconds": 17773.0
-    },
     {
       "report_date": "2026-07-28",
       "partition_name": "cpuqueue",
@@ -2085,83 +2037,90 @@
     {
       "report_date": "2026-10-24",
       "partition_name": "cpuqueue",
-      "jobs": 9000,
-      "jobs_with_wait_time": 8581,
-      "avg_wait_seconds": 19464.237734529775,
-      "median_wait_seconds": 133.0,
-      "p90_wait_seconds": 33568.0,
-      "p99_wait_seconds": 283328.0,
+      "jobs": 8477,
+      "jobs_with_wait_time": 8476,
+      "avg_wait_seconds": 18438.425082586127,
+      "median_wait_seconds": 132.0,
+      "p90_wait_seconds": 22422.0,
+      "p99_wait_seconds": 254402.0,
       "max_wait_seconds": 1540372.0,
-      "avg_runtime_seconds": 2668.7054444444443
+      "avg_runtime_seconds": 2433.6865636427983
     },
     {
       "report_date": "2026-10-24",
       "partition_name": "gpuqueue",
-      "jobs": 210,
-      "jobs_with_wait_time": 11,
-      "avg_wait_seconds": 149832.63636363635,
-      "median_wait_seconds": 178256.0,
-      "p90_wait_seconds": 189798.0,
+      "jobs": 11,
+      "jobs_with_wait_time": 10,
+      "avg_wait_seconds": 161720.7,
+      "median_wait_seconds": 180780.0,
+      "p90_wait_seconds": 197335.0,
       "p99_wait_seconds": 197335.0,
       "max_wait_seconds": 197335.0,
-      "avg_runtime_seconds": 163.72857142857143
+      "avg_runtime_seconds": 2888.2727272727275
     },
     {
       "report_date": "2026-10-25",
       "partition_name": "cpuqueue",
-      "jobs": 79,
-      "jobs_with_wait_time": 79,
-      "avg_wait_seconds": 60261.82278481012,
-      "median_wait_seconds": 81480.0,
-      "p90_wait_seconds": 133937.0,
-      "p99_wait_seconds": 253672.0,
-      "max_wait_seconds": 253672.0,
-      "avg_runtime_seconds": 6127.316455696203
+      "jobs": 6368,
+      "jobs_with_wait_time": 6124,
+      "avg_wait_seconds": 62873.60042455911,
+      "median_wait_seconds": 6266.0,
+      "p90_wait_seconds": 172360.0,
+      "p99_wait_seconds": 193951.0,
+      "max_wait_seconds": 432501.0,
+      "avg_runtime_seconds": 4235.081501256282
     },
     {
       "report_date": "2026-10-25",
       "partition_name": "gpuqueue",
-      "jobs": 1,
-      "jobs_with_wait_time": 1,
-      "avg_wait_seconds": 27973.0,
-      "median_wait_seconds": 27973.0,
-      "p90_wait_seconds": 27973.0,
-      "p99_wait_seconds": 27973.0,
-      "max_wait_seconds": 27973.0,
-      "avg_runtime_seconds": 2979.0
+      "jobs": 309,
+      "jobs_with_wait_time": 54,
+      "avg_wait_seconds": 262180.9259259259,
+      "median_wait_seconds": 278958.0,
+      "p90_wait_seconds": 301942.0,
+      "p99_wait_seconds": 304248.0,
+      "max_wait_seconds": 304248.0,
+      "avg_runtime_seconds": 719.0064724919093
+    },
+    {
+      "report_date": "2026-10-26",
+      "partition_name": "cpuqueue",
+      "jobs": 300,
+      "jobs_with_wait_time": 300,
+      "avg_wait_seconds": 68083.52666666667,
+      "median_wait_seconds": 6589.0,
+      "p90_wait_seconds": 191933.0,
+      "p99_wait_seconds": 194296.0,
+      "max_wait_seconds": 375896.0,
+      "avg_runtime_seconds": 6410.733333333334
     }
   ],
-  "histogram_date": "2026-10-25",
+  "histogram_date": "2026-10-26",
   "wait_time_histogram": [
     {
       "partition_name": "cpuqueue",
       "bucket": "0-5m",
-      "jobs": 15
+      "jobs": 31
     },
     {
       "partition_name": "cpuqueue",
       "bucket": "1d-7d",
-      "jobs": 38
+      "jobs": 99
     },
     {
       "partition_name": "cpuqueue",
       "bucket": "2h-1d",
-      "jobs": 7
+      "jobs": 47
     },
     {
       "partition_name": "cpuqueue",
       "bucket": "30m-2h",
-      "jobs": 5
+      "jobs": 42
     },
     {
       "partition_name": "cpuqueue",
       "bucket": "5-30m",
-      "jobs": 14
-    },
-    {
-      "partition_name": "gpuqueue",
-      "bucket": "2h-1d",
-      "jobs": 1
+      "jobs": 81
     }
   ],
   "wait_time_by_size": [
@@ -2169,65 +2128,57 @@
       "partition_name": "cpuqueue",
       "bucket_type": "cpu",
       "bucket": "1-4",
-      "jobs": 15,
-      "avg_wait_seconds": 67454.06666666667,
-      "median_wait_seconds": 104034.0
+      "jobs": 159,
+      "avg_wait_seconds": 115926.14465408806,
+      "median_wait_seconds": 183862.0
     },
     {
       "partition_name": "cpuqueue",
       "bucket_type": "cpu",
       "bucket": "17-64",
-      "jobs": 6,
-      "avg_wait_seconds": 53832.333333333336,
-      "median_wait_seconds": 15643.0
+      "jobs": 2,
+      "avg_wait_seconds": 196245.0,
+      "median_wait_seconds": 375896.0
     },
     {
       "partition_name": "cpuqueue",
       "bucket_type": "cpu",
       "bucket": "5-16",
-      "jobs": 58,
-      "avg_wait_seconds": 59066.879310344826,
-      "median_wait_seconds": 88778.0
+      "jobs": 139,
+      "avg_wait_seconds": 11513.028776978417,
+      "median_wait_seconds": 3803.0
     },
     {
       "partition_name": "cpuqueue",
       "bucket_type": "memory",
       "bucket": "128GB+",
-      "jobs": 19,
-      "avg_wait_seconds": 125782.73684210527,
-      "median_wait_seconds": 133831.0
+      "jobs": 24,
+      "avg_wait_seconds": 65857.08333333333,
+      "median_wait_seconds": 52831.0
+    },
+    {
+      "partition_name": "cpuqueue",
+      "bucket_type": "memory",
+      "bucket": "32-128GB",
+      "jobs": 3,
+      "avg_wait_seconds": 4596.0,
+      "median_wait_seconds": 6836.0
     },
     {
       "partition_name": "cpuqueue",
       "bucket_type": "memory",
       "bucket": "8-32GB",
-      "jobs": 47,
-      "avg_wait_seconds": 28923.59574468085,
-      "median_wait_seconds": 1363.0
+      "jobs": 60,
+      "avg_wait_seconds": 3997.983333333333,
+      "median_wait_seconds": 1771.0
     },
     {
       "partition_name": "cpuqueue",
       "bucket_type": "memory",
       "bucket": "<8GB",
-      "jobs": 13,
-      "avg_wait_seconds": 77800.23076923077,
-      "median_wait_seconds": 104034.0
-    },
-    {
-      "partition_name": "gpuqueue",
-      "bucket_type": "cpu",
-      "bucket": "5-16",
-      "jobs": 1,
-      "avg_wait_seconds": 27973.0,
-      "median_wait_seconds": 27973.0
-    },
-    {
-      "partition_name": "gpuqueue",
-      "bucket_type": "memory",
-      "bucket": "8-32GB",
-      "jobs": 1,
-      "avg_wait_seconds": 27973.0,
-      "median_wait_seconds": 27973.0
+      "jobs": 213,
+      "avg_wait_seconds": 87280.84976525822,
+      "median_wait_seconds": 4434.0
     }
   ]
 }
