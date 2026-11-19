@@ -1,6 +1,6 @@
 {
   "schema_version": "analytics-v1",
-  "generated_at": "2026-11-18T00:20:39Z",
+  "generated_at": "2026-11-19T04:09:47Z",
   "all_time_summary": {
     "jobs": 36,
     "completed_jobs": 24,
@@ -43,42 +43,42 @@
   },
   "rolling_summaries": {
     "7d": {
-      "jobs": 4,
-      "completed_jobs": 3,
+      "jobs": 3,
+      "completed_jobs": 2,
       "failed_jobs": 1,
-      "cpu_hours_allocated": 9.135833,
-      "measured_cpu_hours": 0.750556,
-      "avg_cpu_efficiency": 0.244192,
-      "jobs_with_measured_cpu": 4,
-      "requested_mem_gb_hours": 128.361667,
-      "measured_mem_gb_max_sum": 0.225295,
-      "avg_memory_efficiency": 0.013155,
-      "jobs_with_measured_memory": 4,
-      "estimated_cost_dkk": 2.184018,
-      "underutilized_cost_dkk": 2.150143,
+      "cpu_hours_allocated": 3.019722,
+      "measured_cpu_hours": 0.491111,
+      "avg_cpu_efficiency": 0.311449,
+      "jobs_with_measured_cpu": 3,
+      "requested_mem_gb_hours": 6.039444,
+      "measured_mem_gb_max_sum": 0.205649,
+      "avg_memory_efficiency": 0.017213,
+      "jobs_with_measured_memory": 3,
+      "estimated_cost_dkk": 0.196282,
+      "underutilized_cost_dkk": 0.16436,
       "gpu_hours": 0.0,
-      "cpu_cost_dkk": 0.593829,
-      "mem_cost_dkk": 2.085877,
+      "cpu_cost_dkk": 0.196282,
+      "mem_cost_dkk": 0.098141,
       "gpu_cost_dkk": 0.0,
-      "cost_bearer": "memory",
-      "cost_bearer_cost_dkk": 2.085877,
-      "cost_bearer_efficiency": 0.013155,
-      "cost_bearer_waste_dkk": 2.150143,
-      "leaf_index": 15,
+      "cost_bearer": "cpu",
+      "cost_bearer_cost_dkk": 0.196282,
+      "cost_bearer_efficiency": 0.311449,
+      "cost_bearer_waste_dkk": 0.16436,
+      "leaf_index": 19,
       "leaf_index_components": [
         {
           "id": "cpu",
           "label": "CPU efficiency",
-          "value": 0.2442,
+          "value": 0.3114,
           "weight": 0.6,
-          "contribution": 0.1465
+          "contribution": 0.1869
         },
         {
           "id": "memory",
           "label": "Memory efficiency",
-          "value": 0.0132,
+          "value": 0.0172,
           "weight": 0.4,
-          "contribution": 0.0053
+          "contribution": 0.0069
         }
       ]
     },
