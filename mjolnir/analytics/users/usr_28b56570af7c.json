@@ -1,6 +1,6 @@
 {
   "schema_version": "analytics-v1",
-  "generated_at": "2026-11-27T00:37:23Z",
+  "generated_at": "2026-11-28T00:29:46Z",
   "all_time_summary": {
     "jobs": 596350,
     "completed_jobs": 531337,
@@ -83,42 +83,42 @@
       ]
     },
     "30d": {
-      "jobs": 16,
+      "jobs": 14,
       "completed_jobs": 1,
-      "failed_jobs": 15,
-      "cpu_hours_allocated": 10255.386944,
+      "failed_jobs": 13,
+      "cpu_hours_allocated": 5491.595278,
       "measured_cpu_hours": 4732.168333,
-      "avg_cpu_efficiency": 0.288197,
-      "jobs_with_measured_cpu": 9,
-      "requested_mem_gb_hours": 198344.876111,
-      "measured_mem_gb_max_sum": 76.664202,
-      "avg_memory_efficiency": 0.211371,
-      "jobs_with_measured_memory": 10,
-      "estimated_cost_dkk": 3457.874126,
-      "underutilized_cost_dkk": 3105.831433,
+      "avg_cpu_efficiency": 0.370539,
+      "jobs_with_measured_cpu": 7,
+      "requested_mem_gb_hours": 7793.209444,
+      "measured_mem_gb_max_sum": 47.815066,
+      "avg_memory_efficiency": 0.260608,
+      "jobs_with_measured_memory": 8,
+      "estimated_cost_dkk": 361.409542,
+      "underutilized_cost_dkk": 53.818421,
       "gpu_hours": 0.0,
-      "cpu_cost_dkk": 666.600151,
-      "mem_cost_dkk": 3223.104237,
+      "cpu_cost_dkk": 356.953693,
+      "mem_cost_dkk": 126.639653,
       "gpu_cost_dkk": 0.0,
-      "cost_bearer": "memory",
-      "cost_bearer_cost_dkk": 3223.104237,
-      "cost_bearer_efficiency": 0.211371,
-      "cost_bearer_waste_dkk": 3105.831433,
-      "leaf_index": 26,
+      "cost_bearer": "cpu",
+      "cost_bearer_cost_dkk": 356.953693,
+      "cost_bearer_efficiency": 0.370539,
+      "cost_bearer_waste_dkk": 53.818421,
+      "leaf_index": 33,
       "leaf_index_components": [
         {
           "id": "cpu",
           "label": "CPU efficiency",
-          "value": 0.2882,
+          "value": 0.3705,
           "weight": 0.6,
-          "contribution": 0.1729
+          "contribution": 0.2223
         },
         {
           "id": "memory",
           "label": "Memory efficiency",
-          "value": 0.2114,
+          "value": 0.2606,
           "weight": 0.4,
-          "contribution": 0.0845
+          "contribution": 0.1042
         }
       ]
     },
